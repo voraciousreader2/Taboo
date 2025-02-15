@@ -441,3 +441,5 @@
 	|sprPlayerPortrait
 	|sprNpcPortrait
 	|sprNpc
++my_sprites
+	|sprScroll
