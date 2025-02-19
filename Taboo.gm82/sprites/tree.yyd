@@ -443,6 +443,7 @@
 	|sprNpc
 +my_sprites
 	|sprScroll
+	|sprFlipBlock
 +Jopagu
 	|sprCage
 	|sprCageMask

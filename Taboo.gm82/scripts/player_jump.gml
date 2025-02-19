@@ -11,7 +11,10 @@ if (vvvvvv) {
         jump_timer=0
         onGround=false
     }
-} else if (!hang && !onVineL && !onVineR) {
+}
+else if (instance_place(x,y+vflip,FlipBlock)) // flip block
+{flip_player(); sound_play_auto("sndFlip")}
+  else if (!hang && !onVineL && !onVineR) {
     //get shape water type
     var sw,swt;
     sw=instance_place(x,y,ShapeWater)

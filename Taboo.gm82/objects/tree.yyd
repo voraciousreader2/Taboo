@@ -515,3 +515,5 @@
 	|SpikeTrapL
 	|SpikeTrapR
 	|SpikeTrapU
++my_objects
+	|FlipBlock
