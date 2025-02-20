@@ -443,7 +443,14 @@
 	|sprNpc
 +my_sprites
 	|sprScroll
-	|sprFlipBlock
+	|sprArrowR
+	+Fields
+		|sprFieldR
+		|sprFieldU
+		|sprFieldD
+		|sprFieldL
+	+Blocks
+		|sprFlipBlock
 +Jopagu
 	|sprCage
 	|sprCageMask

@@ -39,7 +39,7 @@ global.release_mode=false
     global.filemenu_color=$ffffff
     //enable test mode in exe builds
     //do not forget to disable this when publishing your game
-    global.always_test_mode=false
+    global.always_test_mode=true
     //disable the player delta time system (see Player step event action 1)
     global.disable_delta_time=false
     //disable the global settings repository
@@ -99,9 +99,9 @@ global.release_mode=false
     //save automatically when touching saves
     global.contact_saves=false
     //press shoot to save when touching a save
-    global.press_shoot_saves=false
+    global.press_shoot_saves=true
     //let all saves work even while flipped the wrong way
-    global.flip_saves=true
+    global.flip_saves=false
     //saves display the time they were first saved above them
     global.idolmaster_saves=true
     //save death & time stats in a .csv file in the save location
@@ -177,7 +177,7 @@ global.release_mode=false
     //2 - pause the level music immediately
     //3 - do nothing (music keeps playing)
     //4 - music slowdown
-    global.gameover_music=0
+    global.gameover_music=1
     //game over music filename
     //must be placed in the 'sounds' folder, but it functions as music ingame
     global.death_music="m-r-tight"

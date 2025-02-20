@@ -344,7 +344,9 @@ if (!frozen) {
                         //mario mode
                         if (onPlatform || onGround) hspeed+=input_h*mm_ground_accel
                         else hspeed+=input_h*mm_air_accel
-                    } else {
+                    } 
+                    //else if (place_meeting(x,y,FieldR)) {hspeed=maxSpeed} // 4 direction movement fields here
+                    else {
                         //move normally
                         hspeed=maxSpeed*input_h
                     }

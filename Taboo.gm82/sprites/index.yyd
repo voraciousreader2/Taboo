@@ -451,3 +451,9 @@ sprSpikeLeftTrap
 sprSpikeRightTrap
 sprSpikeUpTrap
 sprFlipBlock
+sprFieldR
+
+sprArrowR
+sprFieldL
+sprFieldU
+sprFieldD
