@@ -550,7 +550,7 @@ if (instance_place(x,y,GuyWater)) {
     djump=maxjumps
     onfire=false
 }
-if (instance_place(x,y,Water1) || instance_place(x,y,Water3) || swt=="Water1" || swt=="Water3") {
+if (instance_place(x,y,Water1) || instance_place(x,y,Water3) || instance_place(x,y,AngryWater) || swt=="Water1" || swt=="Water3") {
     if (vspeed*vflip>2) vspeed=2*vflip
     djump=1
 }

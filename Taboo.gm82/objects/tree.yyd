@@ -516,11 +516,14 @@
 	|SpikeTrapR
 	|SpikeTrapU
 +my_objects
-	|FlipBlock
 	+Fields
 		|FieldR
 		|FieldL
 		|FieldU
 		|FieldD
 	+Blocks
+		|FlipBlock
+		|SJumpBlock
 	+Rules
+		|AngryWater
+	|SaveBook

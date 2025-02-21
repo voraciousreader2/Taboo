@@ -89,7 +89,7 @@ global.release_mode=false
     global.closing_animation=true
     //if false, items are only collected upon saving normally
     //otherwise, items are collected immediately
-    global.autosave_items=false
+    global.autosave_items=true
     //item display on the file menu is replaced with a (x/y) counter
     global.item_number_display=false
     //item display on the file menu is replaced with a (x%) counter
@@ -103,7 +103,7 @@ global.release_mode=false
     //let all saves work even while flipped the wrong way
     global.flip_saves=false
     //saves display the time they were first saved above them
-    global.idolmaster_saves=true
+    global.idolmaster_saves=false
     //save death & time stats in a .csv file in the save location
     //recommended to turn this off when publishing your game
     global.save_csv_stats=false
@@ -135,7 +135,7 @@ global.release_mode=false
     //0 - leave the player stuck in the wall
     //1 - kill the player when pushed into a wall
     //2 - drop the player through the platform
-    global.platform_crush_behavior=2
+    global.platform_crush_behavior=0
     //default skin and weapon for a new file
     global.player_default_skin=skin_default
     global.player_default_weapon=weapon_default

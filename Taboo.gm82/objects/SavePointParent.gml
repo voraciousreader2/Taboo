@@ -16,7 +16,8 @@ notice=0
 idolmaster=0
 font=fntSignpost
 color=$ffffff
-msg=key_shoot(vi_name)+lang("presstosave")
+//msg=key_shoot(vi_name)+lang("presstosave")
+msg=""
 
 if (difficulty>mydifficulty) {
     instance_destroy()
@@ -44,7 +45,7 @@ if (save) {
     
     image_index=1
     image_speed=1/room_speed
-    sound_play_auto("sndSave")
+    sound_play_auto("sndSaveVoracious")
     
     showtime=savedata("showtime "+name)
     if (showtime) time_display=format_time(showtime)

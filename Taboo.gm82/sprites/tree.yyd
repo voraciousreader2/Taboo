@@ -451,6 +451,12 @@
 		|sprFieldL
 	+Blocks
 		|sprFlipBlock
+		|sprSJumpBlock
+	|sprBook
+	+Rules
+		|sprAngryWater
+	|sprArrowUp
+	|sprArrowDown
 +Jopagu
 	|sprCage
 	|sprCageMask
