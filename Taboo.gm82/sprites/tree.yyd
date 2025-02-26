@@ -442,6 +442,11 @@
 	|sprNpcPortrait
 	|sprNpc
 +my_sprites
+	+spikesJ
+		|spikeUJ
+		|spikeRJ
+		|spikeDJ
+		|spikeLJ
 	|sprScroll
 	|sprArrowR
 	+Fields
