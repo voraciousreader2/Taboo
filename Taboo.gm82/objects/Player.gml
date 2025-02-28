@@ -306,7 +306,8 @@ if (!frozen) {
 
     //count down jump buffering
     if (jump_timer) jump_timer-=1
-
+if (place_meeting(x,y,FieldR)) {move_player(x+3,y,true); input_h=0} // 4 direction movement fields here
+if (place_meeting(x,y,FieldL)) {move_player(x-3,y,true); input_h=0} // 4 direction movement fields here
     if (walljumpboost) {
         //if you're boosting from a caution strip, lock controls
         input_h=walljumpdir
@@ -345,7 +346,7 @@ if (!frozen) {
                         if (onPlatform || onGround) hspeed+=input_h*mm_ground_accel
                         else hspeed+=input_h*mm_air_accel
                     } 
-                    //else if (place_meeting(x,y,FieldR)) {hspeed=maxSpeed} // 4 direction movement fields here
+                    
                     else {
                         //move normally
                         hspeed=maxSpeed*input_h

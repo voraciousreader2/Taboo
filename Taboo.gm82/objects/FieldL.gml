@@ -13,7 +13,6 @@ applies_to=self
 */
 if(place_meeting(x,y,Player))
 {
-Player.x-=3; input_disable(key_left);
 if(key_right(vi_pressed)|| key_right()){kill_player()}
 }
 else {input_enable(key_left)}

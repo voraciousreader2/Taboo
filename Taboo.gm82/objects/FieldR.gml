@@ -12,8 +12,7 @@ action_id=603
 applies_to=self
 */
 if(place_meeting(x,y,Player))
-{
-Player.x+=3; input_disable(key_right);
+{input_disable(key_right);
 if(key_left(vi_pressed)|| key_left()){kill_player()}
 }
 else {input_enable(key_right)}
