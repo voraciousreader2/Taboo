@@ -293,9 +293,9 @@
 		|sprBeamRed
 		|sprBeamGreen
 	+Vcoin
-		|sprVCoinA
 		|sprVCoinB
 		|sprVLineFlipper
+		|sprVCoinA
 	+KTG
 		|sprJumpSwitchBlock
 		|sprJumpSwitchBlockOff
@@ -454,6 +454,8 @@
 		|sprFieldU
 		|sprFieldD
 		|sprFieldL
+		|sprBlueCoin
+		|sprCoinBlock
 	+Blocks
 		|sprFlipBlock
 		|sprSJumpBlock
@@ -462,6 +464,8 @@
 		|sprAngryWater
 	|sprArrowUp
 	|sprArrowDown
+	|sprVoracious
+	|sprPortal
 +Jopagu
 	|sprCage
 	|sprCageMask

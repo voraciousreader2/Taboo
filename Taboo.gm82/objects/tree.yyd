@@ -521,6 +521,8 @@
 		|FieldL
 		|FieldU
 		|FieldD
+		|BlueCoin
+		|CoinBlock
 	+Blocks
 		|FlipBlock
 		|SJumpBlock

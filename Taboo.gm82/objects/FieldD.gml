@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-spd=3; image_speed=1/8
+spd=2; image_speed=1/8
 #define Collision_Player
 /*"/*'/**//* YYD ACTION
 lib_id=1

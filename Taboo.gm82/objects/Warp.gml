@@ -12,6 +12,7 @@ warpsound=""
 autosave=false
 roomTo=room
 transparent=0
+image_speed=1/8
 #define Collision_Player
 /*"/*'/**//* YYD ACTION
 lib_id=1
