@@ -528,4 +528,6 @@
 		|SJumpBlock
 	+Rules
 		|AngryWater
+		|MiniCage
+		|RuleTest
 	|SaveBook

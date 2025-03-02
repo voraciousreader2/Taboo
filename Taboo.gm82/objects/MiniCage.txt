@@ -1,0 +1,7 @@
+sprite=sprMiniCage
+visible=1
+solid=1
+persistent=0
+depth=-11
+parent=Block
+mask=sprMiniCageMask

@@ -465,7 +465,9 @@
 	|sprArrowUp
 	|sprArrowDown
 	|sprVoracious
+	|sprMiniCageMask
 	|sprPortal
+	|sprMiniCage
 +Jopagu
 	|sprCage
 	|sprCageMask

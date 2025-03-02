@@ -20,15 +20,17 @@
 		|rmDialogueDemo
 		|rmDialogueDemo2
 	|rmTemplate
-	|rmGimmickTest
-	|rmDeathTest
+	|rGimmickTest
+	|rDeathTest
 	+TempleC
 		|rTempleCProto
 	+TempleP
 		|rTemplePProto
 	+TempleJ
 		|rTempleJProto
+		|rTempleJ3
 		|rTempleJ1
+		|rTempleJ2
 	+Chaos
 	+Credits
 	+NeedleHub

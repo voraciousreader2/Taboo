@@ -24,9 +24,11 @@ rmShaders
 
 rmDialogueDemo
 rmDialogueDemo2
-rmGimmickTest
-rmDeathTest
+rGimmickTest
+rDeathTest
 rTemplePProto
 rTempleJProto
 rTempleCProto
 rTempleJ1
+rTempleJ2
+rTempleJ3
