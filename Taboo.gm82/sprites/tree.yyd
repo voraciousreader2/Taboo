@@ -456,6 +456,9 @@
 		|sprFieldL
 		|sprBlueCoin
 		|sprCoinBlock
+		|sprKBD
+		|sprKBU
+		|sprFieldSJ
 	+Blocks
 		|sprFlipBlock
 		|sprSJumpBlock

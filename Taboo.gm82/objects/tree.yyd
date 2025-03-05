@@ -523,6 +523,7 @@
 		|FieldD
 		|BlueCoin
 		|CoinBlock
+		|FieldSJ
 	+Blocks
 		|FlipBlock
 		|SJumpBlock
