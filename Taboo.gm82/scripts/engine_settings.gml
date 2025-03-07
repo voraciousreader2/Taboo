@@ -142,7 +142,7 @@ global.release_mode=false
     //kill player when leaving the room region
     global.die_outside_room=true
     //also kill the player when leaving the room off the top
-    global.die_outside_top=false
+    global.die_outside_top=true
     //allow pressing A and D to move 1 pixel left and right to change your align
     //regardless of debug mode
     global.a_d_trick=false

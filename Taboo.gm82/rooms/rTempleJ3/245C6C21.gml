@@ -1,3 +1,3 @@
 //gm82 fields begin
-max_coin=4
+max_coin=5
 //gm82 fields end
