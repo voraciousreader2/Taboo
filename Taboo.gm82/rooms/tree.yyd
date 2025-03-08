@@ -28,10 +28,13 @@
 		|rTemplePProto
 	+TempleJ
 		|rTempleJProto
-		|rTempleJ4
-		|rTempleJ3
+		|rTempleJBoss
+		|rTempleJItemRoom
 		|rTempleJ1
 		|rTempleJ2
+		|rTempleJ3
+		|rTempleJ4
+		|rTempleJ5
 	+Chaos
 	+Credits
 	+NeedleHub

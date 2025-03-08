@@ -471,6 +471,16 @@
 	|sprMiniCageMask
 	|sprPortal
 	|sprMiniCage
+	+spikesP
+		|spikeUP
+		|spikeRP
+		|spikeDP
+		|spikeLP
+	+spikesC
+		|spikeUC
+		|spikeRC
+		|spikeDC
+		|spikeLC
 +Jopagu
 	|sprCage
 	|sprCageMask
@@ -495,3 +505,4 @@
 	|sprSpikeLeftTrap
 	|sprSpikeRightTrap
 	|sprSpikeUpTrap
+|sprLobelia
