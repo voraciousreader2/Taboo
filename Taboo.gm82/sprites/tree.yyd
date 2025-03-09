@@ -465,6 +465,8 @@
 	|sprBook
 	+Rules
 		|sprAngryWater
+		|sprVineL
+		|sprVineR
 	|sprArrowUp
 	|sprArrowDown
 	|sprVoracious

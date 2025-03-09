@@ -4,7 +4,8 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-sprite_index=sprWallJumpR
+//sprite_index=sprWallJumpR
+sprite_index=sprVineR
 active=1
 
 if (global.clean_vines) if (!instance_place(x,y,Block)) active=0
