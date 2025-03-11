@@ -459,9 +459,15 @@
 		|sprKBD
 		|sprKBU
 		|sprFieldSJ
+		+BossJ
+			|sprMageIdle
+			|sprBulletBlue
+			|sprMageAtk
 	+Blocks
 		|sprFlipBlock
+		|sprSpikeBlock
 		|sprSJumpBlock
+		|sprCrusherStatue
 	|sprBook
 	+Rules
 		|sprAngryWater
@@ -483,6 +489,9 @@
 		|spikeRC
 		|spikeDC
 		|spikeLC
+	|sprBulletsAll
+	|sprOrbBlue
+	|sprBossSave
 +Jopagu
 	|sprCage
 	|sprCageMask

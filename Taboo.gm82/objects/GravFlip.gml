@@ -4,6 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+if(Player.vflip!=-1){sound_play("sndFlip")}
 flip_player(-1)
 #define Other_0
 /*"/*'/**//* YYD ACTION

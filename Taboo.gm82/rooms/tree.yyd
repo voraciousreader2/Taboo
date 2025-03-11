@@ -29,6 +29,7 @@
 	+TempleJ
 		|rTempleJProto
 		|rTempleJBoss
+		|rJBossTest
 		|rTempleJItemRoom
 		|rTempleJ1
 		|rTempleJ2

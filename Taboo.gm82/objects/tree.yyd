@@ -524,9 +524,15 @@
 		|BlueCoin
 		|CoinBlock
 		|FieldSJ
+		+BossJ
+			|BossSaveJ
+			|BossJ
+			|BulletBlue
+			|GravBurst
 	+Blocks
 		|FlipBlock
 		|SJumpBlock
+		|SpikeBlock
 	+Rules
 		|AngryWater
 		|MiniCage
