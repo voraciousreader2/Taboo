@@ -7,7 +7,8 @@ applies_to=self
 alpha=0
 on=1
 
-alarm[0]=150*dt
+//alarm[0]=150*dt
+alarm[0]=75*dt
 
 str="BOSS"
 str2=""
