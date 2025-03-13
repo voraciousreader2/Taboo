@@ -463,6 +463,7 @@
 			|sprMageIdle
 			|sprBulletBlue
 			|sprMageAtk
+			|sprYinYang
 	+Blocks
 		|sprFlipBlock
 		|sprSpikeBlock
@@ -492,6 +493,8 @@
 	|sprBulletsAll
 	|sprOrbBlue
 	|sprBossSave
+	|sprLobelia
+	|sprWarning
 +Jopagu
 	|sprCage
 	|sprCageMask
@@ -516,4 +519,3 @@
 	|sprSpikeLeftTrap
 	|sprSpikeRightTrap
 	|sprSpikeUpTrap
-|sprLobelia

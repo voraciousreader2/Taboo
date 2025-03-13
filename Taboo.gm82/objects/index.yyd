@@ -527,6 +527,11 @@ FieldSJ
 BossJ
 BossSaveJ
 BulletBlue
-GravBurst
+
 SpikeBlock
 Burst360
+PhaseLeft
+PhaseCoin
+CoinCannonY
+CoinCannonX
+Warning

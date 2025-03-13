@@ -1,3 +1,3 @@
 //gm82 fields begin
-BGM="bgmTempleJ"
+destroy_on_start=true
 //gm82 fields end

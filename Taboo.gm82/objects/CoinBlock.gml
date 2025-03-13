@@ -28,4 +28,6 @@ action_id=603
 applies_to=self
 */
 draw_self();
-draw_text(x+11,y+9,max_coin-coin_counter)
+//draw_text(x+11*image_xscale,y+9*image_yscale,max_coin-coin_counter)
+
+draw_text_transformed(x+11*image_xscale,y+9*image_yscale,max_coin-coin_counter,image_xscale,image_yscale,0)

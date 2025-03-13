@@ -7,7 +7,7 @@ applies_to=self
 image_speed=1/8; start=false; alpha=0; active=false;
 phase_counter=0;
 current_phase="none"
-HP=70;
+HP=30;
 iframes=false;
 xscale=1;
 #define Alarm_0
@@ -38,14 +38,30 @@ applies_to=self
 phase_counter+=1;
 with(Burst360){instance_destroy()}
 
-x=64; y=224; sprite_index=sprMageAtk; xscale=-1
+x=64; y=224; sprite_index=sprMageAtk; xscale=-1;
+
+instance_create(368,128,PhaseLeft)
+#define Alarm_2
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=end of phase left
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+iframes=false; sprite_index=sprMageIdle; xscale=1;
+x=368; y=480
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-if(start)
+if(start) // intro
 {
 active=true; start=false
 current_phase="barrage_top"
@@ -53,12 +69,12 @@ intro=instance_create(x,y,BossIntroduction)
 intro.font=fntBossJ;
 intro.str="Myosotis"; intro.str2="Temple Guardian";
 
-
-//phase 1
+// loop music
 
 if(!sound_isplaying("bgmBossJ"))
-{sound_loop("bgmBossJ"); sound_set_loop_points("bgmBossJ",33,184)}
+{sound_loop("bgmBossJ"); sound_set_loop_points("bgmBossJ",26,185)}
 
+//phase 1
 alarm[1]=800;
 burst1=instance_create(128,192,Burst360); burst1.offset=76;
 burst2=instance_create(640,192,Burst360); burst2.offset=92;
@@ -66,6 +82,28 @@ burst3=instance_create(224,96,Burst360); burst3.offset=108;
 burst4=instance_create(544,96,Burst360); burst4.offset=124;
 
 }
+
+if(HP<=20 && phase_counter<=1) // end of phase left
+{
+phase_counter+=1;
+instance_destroy_id(PhaseLeft);
+instance_destroy_id(Spinner);
+instance_destroy_id(FieldL);
+iframes=true;
+alarm[2]=50;
+}
+
+if(phase_counter==2 && !instance_exists(PhaseCoin)) // coin phase
+{
+instance_create(x,y,PhaseCoin)
+}
+#define Collision_Player
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+kill_player()
 #define Collision_Bullet
 /*"/*'/**//* YYD ACTION
 lib_id=1

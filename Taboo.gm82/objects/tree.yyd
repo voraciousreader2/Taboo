@@ -528,8 +528,12 @@
 			|BossSaveJ
 			|BossJ
 			|BulletBlue
-			|GravBurst
 			|Burst360
+			|PhaseLeft
+			|PhaseCoin
+			|CoinCannonY
+			|CoinCannonX
+			|Warning
 	+Blocks
 		|FlipBlock
 		|SJumpBlock
