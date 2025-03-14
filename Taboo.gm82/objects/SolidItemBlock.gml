@@ -24,7 +24,8 @@ Becomes solid when collecting the item.
 */
 obj=execute_string("return "+itemid)
 
-sprite=object_get_sprite(obj)
+//sprite=object_get_sprite(obj)
+sprite=sprite_index
 
 event_user(0)
 #define Other_10
@@ -36,7 +37,8 @@ applies_to=self
 if (has_item(itemid)) {
     solid=1
     visible=1
-    sprite_index=sprEngineBlock
+    //sprite_index=sprEngineBlock
+    sprite_index=sprBulletBlock
 }
 #define Draw_0
 /*"/*'/**//* YYD ACTION

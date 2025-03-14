@@ -17,7 +17,8 @@ Becomes invisible when collecting the item.
 */
 obj=execute_string("return "+itemid)
 
-sprite=object_get_sprite(obj)
+//sprite=object_get_sprite(obj)
+sprite=sprBulletBlock
 
 event_user(0)
 #define Other_10
@@ -40,4 +41,4 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-draw_sprite_ext(sprite,0,x,y,1,1,0,$ffffff,0.5)
+//draw_sprite_ext(sprite,0,x,y,1,1,0,$ffffff,0.5)

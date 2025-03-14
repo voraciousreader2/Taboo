@@ -91,11 +91,11 @@ global.release_mode=false
     //otherwise, items are collected immediately
     global.autosave_items=true
     //item display on the file menu is replaced with a (x/y) counter
-    global.item_number_display=false
+    global.item_number_display=true
     //item display on the file menu is replaced with a (x%) counter
     global.item_percentage_display=false
     //total amount of items in your game (used for the previous two options)
-    global.item_total_count=8
+    global.item_total_count=3
     //save automatically when touching saves
     global.contact_saves=false
     //press shoot to save when touching a save

@@ -1,3 +1,3 @@
 //gm82 fields begin
-roomTo=rTempleJItemRoom
+roomTo=rTempleJBoss
 //gm82 fields end

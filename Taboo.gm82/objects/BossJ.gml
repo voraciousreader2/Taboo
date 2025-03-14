@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-image_speed=1/8; start=false; alpha=0; active=false;
+image_speed=1/8; start=false; alpha=0; active=false; defeated=false;
 phase_counter=0;
 current_phase="none"
 HP=30;
@@ -55,6 +55,19 @@ applies_to=self
 */
 iframes=false; sprite_index=sprMageIdle; xscale=1;
 x=368; y=480
+#define Alarm_3
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=setup final phase
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+instance_create(x,y,PhaseFinal);
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -83,7 +96,7 @@ burst4=instance_create(544,96,Burst360); burst4.offset=124;
 
 }
 
-if(HP<=20 && phase_counter<=1) // end of phase left
+if(HP<=20 && phase_counter<=1) // end of left phase
 {
 phase_counter+=1;
 instance_destroy_id(PhaseLeft);
@@ -96,6 +109,36 @@ alarm[2]=50;
 if(phase_counter==2 && !instance_exists(PhaseCoin)) // coin phase
 {
 instance_create(x,y,PhaseCoin)
+}
+
+if(phase_counter==3 && !instance_exists(PhaseRight)) // right phase
+{
+instance_create(x,y,PhaseRight)
+x=640; y=224; xscale=1; sprite_index=sprMageAtk;
+}
+
+if(HP<=10 && phase_counter==3) // end of right phase
+{
+phase_counter+=1;
+instance_destroy_id(Spinner); instance_destroy_id(PhaseRight);
+with(FieldR){instance_destroy()}
+alarm[3]=50;
+x=368; y=144;
+}
+
+if(phase_counter==4 && instance_exists(PhaseFinal) && !Player.dead) //final phase
+{
+xscale=sign(x-Player.x);
+}
+
+if(HP<=0)
+{
+if(!defeated)
+{defeated=true; sound_play("sndBossDeath")
+instance_destroy_id(Burst360);
+vspeed=5;alpha=0.5;
+with(PhaseFinal){defeated=true;}
+}
 }
 #define Collision_Player
 /*"/*'/**//* YYD ACTION
@@ -110,7 +153,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if(!iframes)
+if(!iframes && !defeated)
 {
 iframes=true;
 alarm[0]=50;
@@ -129,6 +172,10 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+if(defeated)
+{draw_sprite_ext(sprMageIdle,-1,x+sprite_width*(1-xscale)/2,y,xscale,1,0,c_white,0.5)}
+else
+{
 if(active && !iframes)
 {
 alpha+=0.05;
@@ -139,4 +186,6 @@ else if(iframes)
 {
 alpha=0.8;
 draw_sprite_ext(sprite_index,-1,x+sprite_width*(1-xscale)/2,y,xscale,1,0,c_red,alpha)
+}
+
 }

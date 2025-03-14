@@ -530,9 +530,11 @@
 			|BulletBlue
 			|Burst360
 			|PhaseLeft
+			|PhaseRight
 			|PhaseCoin
 			|CoinCannonY
 			|CoinCannonX
+			|PhaseFinal
 			|Warning
 	+Blocks
 		|FlipBlock

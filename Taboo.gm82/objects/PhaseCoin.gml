@@ -5,7 +5,7 @@ action_id=603
 applies_to=self
 */
 i=1;
-alarm[0]=100; alarm[1]=100; alarm[2]=1000;
+alarm[0]=100; alarm[1]=100; alarm[2]=850;
 
 warning=instance_create(352,288,Warning);
 warning.image_xscale=1.5;

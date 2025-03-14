@@ -1,0 +1,50 @@
+#define Create_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+defeated=false;
+t=50;
+alarm[0]=t
+i=0;
+#define Alarm_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+if(i<=11)
+{
+instance_create(160,32+32*i,FieldU);
+instance_create(608,32+32*i,FieldU);
+i+=1
+alarm[0]=10
+}
+else{alarm[1]=10}
+#define Alarm_1
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+w3=instance_create(384,96,Burst360);
+with(w3)
+{bullets=10; cycle=66; offset=33;}
+#define Alarm_2
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+sound_stop_all()
+w=instance_create(368,128,Warp);
+w.image_xscale=2; w.image_yscale=2;
+instance_destroy();
+#define Step_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+if(defeated){alarm[2]=200; defeated=false}
