@@ -37,7 +37,7 @@ event_perform(ev_other,ev_room_start)
 
 for(i=0; i<num; i+=1)
 {
-o[i].bullets=6; o[i].cycle=66;
+o[i].bullets=5; o[i].cycle=66;
 o[i].offset=22*(i+1);
 }
 

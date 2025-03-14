@@ -5,20 +5,6 @@
 +Game
 	|rmDifficulty
 	|rmHub
-	+Example Rooms
-		|rmDemo
-		|rmDemo2
-		|rmBoss1
-		|rmClassic
-		|rmClassic2
-		|rmMiku
-		|rmMikuNew
-		|rmExtra
-		|rmExBoss
-		|rmShaders
-		|rmClear
-		|rmDialogueDemo
-		|rmDialogueDemo2
 	|rmTemplate
 	|rGimmickTest
 	|rDeathTest

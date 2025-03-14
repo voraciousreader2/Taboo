@@ -464,6 +464,7 @@
 			|sprBulletBlue
 			|sprMageAtk
 			|sprYinYang
+		|sprLobelia
 	+Blocks
 		|sprFlipBlock
 		|sprSpikeBlock
@@ -493,7 +494,6 @@
 	|sprBulletsAll
 	|sprOrbBlue
 	|sprBossSave
-	|sprLobelia
 	|sprWarning
 +Jopagu
 	|sprCage

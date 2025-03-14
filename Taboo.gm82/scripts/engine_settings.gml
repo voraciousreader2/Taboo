@@ -78,7 +78,7 @@ global.release_mode=false
 //game behavior
     global.fullscreen_cursor_visible=false
     //fullscreen caption options
-    global.fullscreen_caption_visible=true
+    global.fullscreen_caption_visible=false
     global.fullscreen_caption_color=$ffff
     global.fullscreen_caption_font=fntSignpost
     //don't go back to the menu - quit the game immediately when pressing esc
