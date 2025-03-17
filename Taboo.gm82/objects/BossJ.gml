@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-image_speed=1/8; start=false; alpha=0; active=false; defeated=false;
+image_speed=1/6; start=false; alpha=0; active=false; defeated=false;
 phase_counter=0;
 current_phase="none"
 HP=30;
@@ -38,7 +38,7 @@ applies_to=self
 phase_counter+=1;
 with(Burst360){instance_destroy()}
 
-x=64; y=224; sprite_index=sprMageAtk; xscale=-1;
+x=64; y=224; sprite_index=sprMageAtk2; xscale=-1;
 
 instance_create(368,128,PhaseLeft)
 #define Alarm_2
@@ -114,7 +114,7 @@ instance_create(x,y,PhaseCoin)
 if(phase_counter==3 && !instance_exists(PhaseRight)) // right phase
 {
 instance_create(x,y,PhaseRight)
-x=640; y=224; xscale=1; sprite_index=sprMageAtk;
+x=640; y=224; xscale=1; sprite_index=sprMageAtk2;
 }
 
 if(HP<=10 && phase_counter==3) // end of right phase
@@ -159,7 +159,7 @@ iframes=true;
 alarm[0]=50;
 with(other){instance_destroy();}
 HP-=1;
-sound_play("sndBossHit")
+sound_play("sndHit")
 }
 else
 {

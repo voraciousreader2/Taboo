@@ -21,7 +21,7 @@ w1=instance_create(352,288,CoinBlock);
 
 with(w1)
 {
-image_xscale=3; image_yscale=3; max_coin=1
+image_xscale=3; image_yscale=3; max_coin=5
 }
 
 w2=instance_create(96,160,CoinCannonY);
@@ -32,6 +32,14 @@ with(w3){dir=180; correct=60;}
 
 w4=instance_create(384,64,CoinCannonX);
 with(w4){dir=270;}
+
+w5=instance_create(400,272,Spinner)
+with(w5)
+{
+num=1; initial_angle=90; cycle_length=3.6; object=CoinCannonCircle;
+sprite=sprYinYang; radius=150;
+event_perform(ev_other,ev_room_start)
+}
 #define Alarm_1
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -57,6 +65,7 @@ applies_to=self
 */
 with(CoinCannonX){instance_destroy();}
 with(CoinCannonY){instance_destroy();}
+with(CoinCannonCircle){instance_destroy();}
 
 with(SpikeU)
 {

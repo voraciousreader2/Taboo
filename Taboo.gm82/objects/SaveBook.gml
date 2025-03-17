@@ -24,7 +24,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if(!active && image_index>12){image_index=0}
+if(!active && image_index>11){image_index=0}
 if(!place_meeting(x,y,Player)){active=false}
 event_inherited()
 #define Collision_Player

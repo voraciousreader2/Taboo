@@ -536,7 +536,10 @@
 			|CoinCannonX
 			|PhaseFinal
 			|Warning
+			|CoinCannonCircle
 		|Lobelia
+		|FieldAltLR
+		|FieldAltDU
 	+Blocks
 		|FlipBlock
 		|SJumpBlock
