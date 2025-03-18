@@ -8,5 +8,6 @@ if(place_meeting(x,y,Player))
 {
 autosave_asap()
 with(BossJ){start=true}
+with(BossHPBar){active=true}
 instance_destroy()
 }

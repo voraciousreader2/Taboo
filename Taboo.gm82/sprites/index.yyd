@@ -497,6 +497,8 @@ sprCrusherStatue
 sprSpikeBlock
 sprWarning
 
-sprYinYang
+sprYinYangCenter
 sprBook2
 sprMageAtk2
+sprYinYangTopLeft
+sprMageIdle0

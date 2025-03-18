@@ -37,7 +37,7 @@ w5=instance_create(400,272,Spinner)
 with(w5)
 {
 num=1; initial_angle=90; cycle_length=3.6; object=CoinCannonCircle;
-sprite=sprYinYang; radius=150;
+sprite=sprYinYangTopLeft; radius=150;
 event_perform(ev_other,ev_room_start)
 }
 #define Alarm_1

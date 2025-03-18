@@ -23,7 +23,7 @@ if(t>=cycle)
 t=0;
 for(i=1; i<=bullets; i+=1)
 {
-w=instance_create_moving(x,y,BulletBlue, 5+random_range(-2,2),(i+random_range(-0.5,0.5))*360/bullets)
+w=instance_create_moving(x+16,y+16,BulletBlue, 5+random_range(-2,2),(i+random_range(-0.5,0.5))*360/bullets)
 }
 }
 #define Other_4

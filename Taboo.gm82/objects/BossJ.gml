@@ -7,7 +7,7 @@ applies_to=self
 image_speed=1/6; start=false; alpha=0; active=false; defeated=false;
 phase_counter=0;
 current_phase="none"
-HP=30;
+HP=30; maxHP=HP;
 iframes=false;
 xscale=1;
 #define Alarm_0
@@ -37,6 +37,7 @@ applies_to=self
 */
 phase_counter+=1;
 with(Burst360){instance_destroy()}
+with(FieldD){instance_destroy()}
 
 x=64; y=224; sprite_index=sprMageAtk2; xscale=-1;
 
@@ -93,7 +94,8 @@ burst1=instance_create(128,192,Burst360); burst1.offset=76;
 burst2=instance_create(640,192,Burst360); burst2.offset=92;
 burst3=instance_create(224,96,Burst360); burst3.offset=108;
 burst4=instance_create(544,96,Burst360); burst4.offset=124;
-
+for(i=0;i<=14; i+=1)
+{instance_create(160+32*i,384,FieldD)}
 }
 
 if(HP<=20 && phase_counter<=1) // end of left phase
@@ -123,7 +125,7 @@ phase_counter+=1;
 instance_destroy_id(Spinner); instance_destroy_id(PhaseRight);
 with(FieldR){instance_destroy()}
 alarm[3]=50;
-x=368; y=144;
+x=348; y=144;
 }
 
 if(phase_counter==4 && instance_exists(PhaseFinal) && !Player.dead) //final phase
@@ -136,6 +138,7 @@ if(HP<=0)
 if(!defeated)
 {defeated=true; sound_play("sndBossDeath")
 instance_destroy_id(Burst360);
+instance_destroy_id(BossHPBar);
 vspeed=5;alpha=0.5;
 with(PhaseFinal){defeated=true;}
 }

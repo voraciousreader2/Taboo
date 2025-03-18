@@ -537,6 +537,7 @@
 			|PhaseFinal
 			|Warning
 			|CoinCannonCircle
+			|BossHPBar
 		|Lobelia
 		|FieldAltLR
 		|FieldAltDU

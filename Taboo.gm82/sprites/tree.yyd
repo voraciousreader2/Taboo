@@ -461,11 +461,13 @@
 		|sprFieldSJ
 		+BossJ
 			|sprMageIdle
+			|sprMageIdle0
 			|sprBulletBlue
 			|sprMageAtk
 			|sprMageAtk2
-			|sprYinYang
 		|sprLobelia
+		|sprYinYangCenter
+		|sprYinYangTopLeft
 	+Blocks
 		|sprFlipBlock
 		|sprSpikeBlock
