@@ -36,6 +36,8 @@ if (alpha<=0) instance_destroy()
 
 x=owner.x
 y=owner.y
+
+if(key_skip(vi_pressed)){instance_destroy();}
 #define Draw_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

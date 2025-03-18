@@ -9,22 +9,31 @@ offset=100;
 bullets=12;
 t=0;
 alpha=0;
+skip_intro=false;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-offset-=1;
+if(key_skip(vi_pressed)){offset-=50;}
+else if(offset>0){offset-=1;}
 if(offset<=0)
-{offset=0; t+=1;}
-if(t>=cycle)
 {
-t=0;
+offset=0;
+if(t==0)
+{
 for(i=1; i<=bullets; i+=1)
 {
 w=instance_create_moving(x+16,y+16,BulletBlue, 5+random_range(-2,2),(i+random_range(-0.5,0.5))*360/bullets)
 }
+}
+t+=1;
+}
+if(t>=cycle)
+{
+t=0;
+
 }
 #define Other_4
 /*"/*'/**//* YYD ACTION

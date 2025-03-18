@@ -6,7 +6,7 @@ applies_to=self
 */
 i=1;
 alarm[0]=100; alarm[1]=100; alarm[2]=850;
-
+dir=sign(Player.x-400);
 warning=instance_create(352,288,Warning);
 warning.image_xscale=1.5;
 warning.image_yscale=1.5;
@@ -46,9 +46,13 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+
+
 if(i<=13)
 {
-w=instance_create(608-32*i,416,SpikeU)
+if(dir==-1)
+{w=instance_create(608-32*i,416,SpikeU)}
+else{w=instance_create(160+32*i,416,SpikeU)}
 i+=1
 with(w)
 {
@@ -84,6 +88,6 @@ action_id=603
 applies_to=self
 */
 with(SpikeU){vspeed=0}
-with(BossJ){phase_counter+=1;}
+with(BossJ){phase_counter+=1; coin_check=true}
 with(CoinBlock){instance_destroy(); sound_play("sndBlockChange")}
 instance_destroy()

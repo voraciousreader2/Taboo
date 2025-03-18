@@ -492,29 +492,6 @@
 	|Fader
 	|SoundEvent
 	|DialogEngine
-|PlayerStart
-|Block
-|Platform
-|SpikeD
-|SpikeL
-|SpikeR
-|SpikeU
-+Jopagu
-	|Cage
-	|DialogueHandlerInteract
-	|DialogueHandlerParent
-	|DialogueHandlerTriggered
-	|ExampleMovingDialogue
-	|FlagSetter
-	|Ghost
-	|KidCharacter
-	|Madeline
-	|Slime
-	|UpArrow
-	|SpikeTrapD
-	|SpikeTrapL
-	|SpikeTrapR
-	|SpikeTrapU
 +my_objects
 	+Fields
 		|FieldR
@@ -550,3 +527,26 @@
 		|MiniCage
 		|RuleTest
 	|SaveBook
+|PlayerStart
+|Block
+|Platform
+|SpikeD
+|SpikeL
+|SpikeR
+|SpikeU
++Jopagu
+	|Cage
+	|DialogueHandlerInteract
+	|DialogueHandlerParent
+	|DialogueHandlerTriggered
+	|ExampleMovingDialogue
+	|FlagSetter
+	|Ghost
+	|KidCharacter
+	|Madeline
+	|Slime
+	|UpArrow
+	|SpikeTrapD
+	|SpikeTrapL
+	|SpikeTrapR
+	|SpikeTrapU

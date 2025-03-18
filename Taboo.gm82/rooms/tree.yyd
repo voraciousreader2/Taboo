@@ -10,6 +10,7 @@
 	|rDeathTest
 	+TempleC
 		|rTempleCProto
+		|rTempleC1
 	+TempleP
 		|rTemplePProto
 	+TempleJ

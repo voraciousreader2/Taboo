@@ -459,6 +459,7 @@
 		|sprKBD
 		|sprKBU
 		|sprFieldSJ
+		|sprFieldSJ2
 		+BossJ
 			|sprMageIdle
 			|sprMageIdle0
@@ -470,6 +471,7 @@
 		|sprYinYangTopLeft
 	+Blocks
 		|sprFlipBlock
+		|sprPushBox
 		|sprSpikeBlock
 		|sprSJumpBlock
 		|sprCrusherStatue
@@ -499,6 +501,7 @@
 	|sprOrbBlue
 	|sprBossSave
 	|sprWarning
+	|sprWarningSquare
 +Jopagu
 	|sprCage
 	|sprCageMask
