@@ -10,19 +10,19 @@
 	|rDeathTest
 	+TempleC
 		|rTempleCProto
+		|rTempleC2
+		|rTempleCItemRoom
 		|rTempleC1
 	+TempleP
 		|rTemplePProto
 	+TempleJ
-		|rTempleJProto
-		|rTempleJBoss
-		|rJBossTest
-		|rTempleJItemRoom
 		|rTempleJ1
 		|rTempleJ2
 		|rTempleJ3
 		|rTempleJ4
 		|rTempleJ5
+		|rTempleJItemRoom
+		|rTempleJBoss
 	+Chaos
 	+Credits
 	+NeedleHub

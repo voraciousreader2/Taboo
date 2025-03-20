@@ -1,3 +1,3 @@
 //gm82 fields begin
-BGM="bgmTempleJ"
+BGM="bgmTempleC"
 //gm82 fields end

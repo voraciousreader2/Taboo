@@ -12,3 +12,5 @@ action_id=603
 applies_to=self
 */
 //field spd
+
+image_speed=spd/2

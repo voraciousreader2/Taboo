@@ -522,6 +522,7 @@
 		|FlipBlock
 		|SJumpBlock
 		|SpikeBlock
+		|CrusherStatue
 	+Rules
 		|AngryWater
 		|MiniCage

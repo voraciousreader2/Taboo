@@ -27,7 +27,7 @@ rmDifficulty
 rGimmickTest
 rDeathTest
 rTemplePProto
-rTempleJProto
+
 rTempleCProto
 rTempleJ1
 rTempleJ2
@@ -36,5 +36,7 @@ rTempleJ5
 rTempleJ4
 rTempleJItemRoom
 rTempleJBoss
-rJBossTest
+
 rTempleC1
+rTempleCItemRoom
+rTempleC2

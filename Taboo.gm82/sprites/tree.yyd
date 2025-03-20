@@ -472,6 +472,8 @@
 	+Blocks
 		|sprFlipBlock
 		|sprPushBox
+		|sprConvLeft
+		|sprConvRight
 		|sprSpikeBlock
 		|sprSJumpBlock
 		|sprCrusherStatue
