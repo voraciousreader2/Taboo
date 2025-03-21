@@ -10,9 +10,9 @@
 	|rDeathTest
 	+TempleC
 		|rTempleCProto
+		|rTempleC1
 		|rTempleC2
 		|rTempleCItemRoom
-		|rTempleC1
 	+TempleP
 		|rTemplePProto
 	+TempleJ
