@@ -1,3 +1,4 @@
 //gm82 fields begin
-spd=1
+type="border"
+tileset=tileC
 //gm82 fields end

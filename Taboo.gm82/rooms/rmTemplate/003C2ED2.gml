@@ -1,3 +1,3 @@
 //gm82 fields begin
-BGM="Seasons"
+BGM="bgmTitle"
 //gm82 fields end

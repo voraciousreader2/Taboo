@@ -6,7 +6,7 @@ applies_to=self
 */
 image_speed=1/4; active=false; saved=false
 
-vflip=1
+vflip=sign(image_yscale)
 save=0
 angle=0
 

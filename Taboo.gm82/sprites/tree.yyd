@@ -475,8 +475,11 @@
 		|sprConvLeft
 		|sprConvRight
 		|sprSpikeBlock
+		|sprCrusher
+		|sprCrusherK
 		|sprSJumpBlock
 		|sprCrusherStatue
+		|sprCenteredBlock
 	|sprBook
 	|sprBook2
 	+Rules
