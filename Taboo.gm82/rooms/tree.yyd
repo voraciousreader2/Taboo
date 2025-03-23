@@ -4,16 +4,17 @@
 |rmOptions
 +Game
 	|rmDifficulty
-	|rmHub
 	|rmTemplate
 	|rGimmickTest
 	|rDeathTest
 	+TempleC
 		|rTempleCProto
+		|rBossTestC
 		|rTempleC1
 		|rTempleC2
 		|rTempleC3
 		|rTempleC4
+		|rTempleC5
 		|rTempleCItemRoom
 	+TempleP
 		|rTemplePProto

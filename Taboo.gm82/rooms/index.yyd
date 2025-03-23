@@ -2,7 +2,7 @@ rmInit
 rmTitle
 rmMenu
 rmOptions
-rmHub
+
 
 
 
@@ -42,3 +42,5 @@ rTempleCItemRoom
 rTempleC2
 rTempleC3
 rTempleC4
+rTempleC5
+rBossTestC
