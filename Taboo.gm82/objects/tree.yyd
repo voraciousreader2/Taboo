@@ -524,7 +524,9 @@
 		|SpikeBlock
 		|CrusherStatue
 		|Crusher
+		|CrusherTroll
 		|CrusherK
+		|Pillar
 	+Rules
 		|AngryWater
 		|MiniCage

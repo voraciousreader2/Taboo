@@ -479,6 +479,8 @@
 		|sprCrusherK
 		|sprSJumpBlock
 		|sprCrusherStatue
+		|sprCrusherPillar
+		|sprCrusherHead
 		|sprCenteredBlock
 	|sprBook
 	|sprBook2
