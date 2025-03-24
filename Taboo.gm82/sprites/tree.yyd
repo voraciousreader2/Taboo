@@ -482,6 +482,8 @@
 		|sprCrusherPillar
 		|sprCrusherHead
 		|sprCenteredBlock
+		|sprExplosion
+		|sprBossBulletC
 	|sprBook
 	|sprBook2
 	+Rules

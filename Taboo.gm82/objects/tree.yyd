@@ -530,6 +530,11 @@
 		+BossC
 			|BossSaveC
 			|BossC
+			|Explosion
+			|Phase1C
+			|BossBullet
+			|Phase2C
+			|WarningT
 	+Rules
 		|AngryWater
 		|MiniCage

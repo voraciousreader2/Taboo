@@ -1,0 +1,180 @@
+#define Create_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+phase_counter=0;
+
+start=false; active=false; defeated=false;
+skip_intro=false; iframes=false;
+snd_check=sound_isplaying("bgmBossC")
+HP=30; maxHP=HP;
+#define Alarm_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=iframes
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+alpha=1; iframes=false
+#define Alarm_1
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=defeated
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+sound_stop_all()
+with(Phase1C){instance_destroy();}
+instance_create(x-32,y-32,Explosion);
+instance_destroy();
+#define Alarm_2
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+instance_create(x,y,Phase1C)
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=begin phase 1
+*/
+#define Alarm_3
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=begin phase 2
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+sound_play("sndThwomp")
+instance_create(400,304,Phase2C)
+#define Step_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+if(start) // intro
+{
+active=true; start=false
+if(!skip_intro)
+{
+intro=instance_create(x,y,BossIntroduction)
+intro.font=fntBossJ;
+intro.str="King Crusher"; intro.str2="URRG";
+alarm[2]=50;
+}
+else{alarm[2]=1}
+
+// loop music
+
+if(!snd_check)
+{
+sound_play("sndThwomp")
+sound_loop("bgmBossC"); sound_set_loop_points("bgmBossC",20,154)
+}
+
+}
+
+
+if(!Player.dead)// crusher behavior
+{
+// vertical check
+if(Player.bbox_right>=x-sprite_width/2 && Player.bbox_left <= x+sprite_width/2 && !defeated && vspeed<=0)
+{
+
+//col_y=collision_line(x,y,x,Player.y,Block,true,true) && collision_line(x,y,x,Player.y,Crusher,true,true) && collision_line(x,y,x,Player.y,CrusherK,true,true)
+col_y=!collision_line(x,y,x,Player.y,BreakBlock,true,true)&&!defeated&&(y<Player.y)
+if(col_y){vspeed=6;}
+}
+}
+
+if(place_meeting(x,y,Block)) // hit the floor
+{
+
+move_outside_solid(180+direction,-1)
+vspeed=-4;
+sound_play("sndThud")
+}
+
+
+if(y<112){y=112; vspeed=0} // height reset
+
+
+
+if(HP<=20 && phase_counter==0) // end of phase 1
+{
+phase_counter+=1;
+alarm[3]=50;
+}
+
+
+
+
+
+if(HP<=0){defeated=true; alarm[1]=1}
+#define Collision_Player
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+kill_player()
+#define Collision_Bullet
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+if(!iframes && !defeated)
+{
+iframes=true;
+alarm[0]=50;
+with(other){instance_destroy();}
+HP-=1;
+sound_play("sndHit")
+}
+else
+{
+with(other){x=xprevious;y=yprevious; direction=direction+180;}
+sound_play("sndBoing")
+}
+#define Draw_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+
+if(!iframes && !defeated)
+{
+//draw_sprite_ext(sprite_index,-1,x,y,1,1,0,c_white,alpha)
+draw_self()
+}
+else if(iframes)
+{
+draw_sprite_ext(sprite_index,-1,x,y,1,1,0,c_red,1)
+}
+
+
+
+if(instance_exists(BossIntroduction) && !skip_intro)
+{draw_text_transformed(288,480,"Press "+key_skip(vi_keyname)+" to Skip",1.5,1.5,0)}
