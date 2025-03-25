@@ -95,7 +95,7 @@ active=true; start=false
 if(!skip_intro)
 {
 intro=instance_create(x,y,BossIntroduction)
-intro.font=fntBossJ;
+intro.font=fntBoss;
 intro.str="Myosotis"; intro.str2="Flower Mage";
 }
 
@@ -123,6 +123,7 @@ for(i=0;i<=14; i+=1)
 if(HP<=20 && phase_counter<=1) // end of phase 2
 {
 phase_counter+=1;
+with(BossHPBar){hp_counter+=1}
 with(PhaseLeft){instance_destroy();}
 with(PhaseRight){instance_destroy();}
 instance_destroy_id(Spinner);
@@ -156,6 +157,7 @@ x=64; y=224; sprite_index=sprMageAtk2; xscale=-1;
 if(HP<=10 && phase_counter==3) // end of phase 4
 {
 phase_counter+=1;
+with(BossHPBar){hp_counter+=1}
 with(PhaseLeft){instance_destroy();}
 with(PhaseRight){instance_destroy();}
 instance_destroy_id(Spinner);
@@ -231,4 +233,8 @@ draw_sprite_ext(sprite_index,-1,x+sprite_width*(1-xscale)/2,y,xscale,1,0,c_red,a
 }
 
 if(instance_exists(BossIntroduction) && !skip_intro)
-{draw_text_transformed(288,480,"Press "+key_skip(vi_keyname)+" to Skip",1.5,1.5,0)}
+{
+draw_set_font(fntBoss)
+draw_text_transformed(288,480,"Press "+key_skip(vi_keyname)+" to Skip",1.5,1.5,0)
+draw_reset()
+}

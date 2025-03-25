@@ -1,10 +1,17 @@
+#define Create_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+killer=true
 #define Collision_Player
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-kill_player()
+if(killer){kill_player()}
 #define Other_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

@@ -1108,7 +1108,8 @@ if (!dead) {
     script_execute(global.player_skin,"draw")
 
     //draw hp bar if the setting to draw it on the player is on
-    if (drawhp && instance_exists(HPMode)) draw_healthbar(drawx-24,drawy-24,drawx+24,drawy-20,(HPMode.hp/HPMode.maxhp)*100,0,HPMode.mincol,HPMode.maxcol,0,1,1)
+    //if (drawhp && instance_exists(HPMode)) draw_healthbar(drawx-24,drawy-24,drawx+24,drawy-20,(HPMode.hp/HPMode.maxhp)*100,0,HPMode.mincol,HPMode.maxcol,0,1,1)
+    if (drawhp && instance_exists(HPMode)) draw_healthbar(drawx-16,drawy-32,drawx+16,drawy-24,(HPMode.hp/HPMode.maxhp)*100,0,HPMode.mincol,HPMode.maxcol,0,1,1)
 
     //draw godmode & infjump special bows
     if (global.debug_god) draw_sprite_ext(sprBow,1,floor(bowx),floor(bowy+abs(lengthdir_y(2,sprite_angle))*vflip+(vflip==-1)),facing,vflip,drawangle,image_blend,image_alpha)

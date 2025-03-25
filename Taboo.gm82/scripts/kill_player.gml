@@ -22,7 +22,7 @@ else if (!dead) {
                 HPMode.hp-=1
                 flashing=HPMode.iframes
                 sound_play_auto(HPMode.sound)
-                emit_blood(10*settings("blood"))
+                //emit_blood(10*settings("blood"))
             }
             if (HPMode.hp>0) exit
         }

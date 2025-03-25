@@ -9,7 +9,7 @@ phase_counter=0;
 start=false; active=false; defeated=false;
 skip_intro=false; iframes=false;
 snd_check=sound_isplaying("bgmBossC")
-HP=30; maxHP=HP;
+HP=24; maxHP=HP;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -37,6 +37,9 @@ applies_to=self
 */
 sound_stop_all()
 with(Phase1C){instance_destroy();}
+with(Phase2C){instance_destroy();}
+with(SpikeD){if(speed!=0){instance_destroy();}}
+with(BossBullet){alpha=0.5; killer=false}
 instance_create(x-32,y-32,Explosion);
 instance_destroy();
 #define Alarm_2
@@ -66,6 +69,20 @@ applies_to=self
 */
 sound_play("sndThwomp")
 instance_create(400,304,Phase2C)
+#define Alarm_4
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=begin phase 3
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+instance_create(400,528,Phase3C)
+sound_play("sndThwomp")
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -78,8 +95,8 @@ active=true; start=false
 if(!skip_intro)
 {
 intro=instance_create(x,y,BossIntroduction)
-intro.font=fntBossJ;
-intro.str="King Crusher"; intro.str2="URRG";
+intro.font=fntBoss;
+intro.str="King Crusher"; intro.str2="URRG!";
 alarm[2]=50;
 }
 else{alarm[2]=1}
@@ -120,12 +137,19 @@ if(y<112){y=112; vspeed=0} // height reset
 
 
 
-if(HP<=20 && phase_counter==0) // end of phase 1
+if(HP<=16 && phase_counter==0) // end of phase 1
 {
 phase_counter+=1;
+with(BossHPBar){hp_counter+=1}
 alarm[3]=50;
 }
 
+if(HP<=8 && phase_counter==1) // end of phase 1
+{
+phase_counter+=1;
+with(BossHPBar){hp_counter+=1}
+alarm[4]=50;
+}
 
 
 
@@ -177,4 +201,8 @@ draw_sprite_ext(sprite_index,-1,x,y,1,1,0,c_red,1)
 
 
 if(instance_exists(BossIntroduction) && !skip_intro)
-{draw_text_transformed(288,480,"Press "+key_skip(vi_keyname)+" to Skip",1.5,1.5,0)}
+{
+draw_set_font(fntBoss)
+draw_text_transformed(64,512,"Press "+key_skip(vi_keyname)+" to Skip",1.5,1.5,0)
+draw_reset()
+}
