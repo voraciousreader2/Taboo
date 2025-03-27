@@ -1,5 +1,13 @@
 if (!object_is_child_of(Player)) with (Player) kill_player()
 else if (!dead) {
+
+    if(room==rTempleP0)
+    {
+  jail_player()
+    }
+
+    else {
+
     if (room==global.difficulty_room) {
         if (global.diffroom_instantrestart) {
             Player.dead=1
@@ -78,4 +86,6 @@ else if (!dead) {
             savedatap("deaths",savedatap("deaths")+1)
         }
     }
+}
+
 }

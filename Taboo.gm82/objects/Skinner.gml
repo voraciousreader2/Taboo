@@ -23,6 +23,8 @@ vine_right = noone
 
 grav_flip = noone
 grav_normal = noone
+
+platform=noone
 #define Other_4
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -48,6 +50,7 @@ An example is provided in rmExtra.
 //field vine_right: sprite
 //field grav_flip: sprite
 //field grav_normal: sprite
+//field platform: sprite
 //field blend: color
 //field alpha: number(0,1)
 
@@ -113,4 +116,8 @@ if (grav_normal!=noone) {
         if (variable_local_exists("spinner_signature")) continue;
         sprite_index=other.grav_normal image_blend=other.blend image_alpha=other.alpha
     }
+}
+
+if (platform!=noone) {
+    with (Platform) {sprite_index=other.platform image_blend=other.blend image_alpha=other.alpha}
 }

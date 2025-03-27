@@ -9,6 +9,7 @@
 	|rDeathTest
 	+TempleC
 		|rTempleCProto
+		|rTempleC0
 		|rBossTestC
 		|rTempleC1
 		|rTempleC2
@@ -19,6 +20,10 @@
 		|rTempleCItemRoom
 	+TempleP
 		|rTemplePProto
+		|rTemplePWaterIntro
+		|rTempleP2
+		|rTempleP1
+		|rTempleP0
 	+TempleJ
 		|rTempleJ1
 		|rTempleJ2

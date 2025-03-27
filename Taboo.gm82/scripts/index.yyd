@@ -359,3 +359,6 @@ draw_text_outline_trans
 merge_maps
 set_dialogue_flag
 unset_dialogue_flag
+rules_list
+add_rule
+jail_player

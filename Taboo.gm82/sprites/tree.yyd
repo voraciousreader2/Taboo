@@ -485,11 +485,12 @@
 		|sprExplosion
 		|sprBossBulletC
 	|sprBook
-	|sprBook2
+	|sprBookOpen
 	+Rules
 		|sprAngryWater
 		|sprVineL
 		|sprVineR
+		|sprSpring
 	|sprArrowUp
 	|sprArrowDown
 	|sprVoracious
@@ -511,6 +512,7 @@
 	|sprBossSave
 	|sprWarning
 	|sprWarningSquare
+	|sprPlatformP
 +Jopagu
 	|sprCage
 	|sprCageMask

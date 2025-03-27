@@ -540,7 +540,10 @@
 		|AngryWater
 		|MiniCage
 		|RuleTest
+		|RuleEnforcer
+		|Spring
 	|SaveBook
+	|Scroll
 |PlayerStart
 |Block
 |Platform

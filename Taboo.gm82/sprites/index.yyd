@@ -498,7 +498,7 @@ sprSpikeBlock
 sprWarning
 
 sprYinYangCenter
-sprBook2
+sprBookOpen
 sprMageAtk2
 sprYinYangTopLeft
 sprMageIdle0
@@ -515,3 +515,5 @@ sprCrusherPillar
 sprCrusherKing
 sprExplosion
 sprBossBulletC
+sprPlatformP
+sprSpring

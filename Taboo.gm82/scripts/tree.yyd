@@ -344,3 +344,7 @@
 	|merge_maps
 	|set_dialogue_flag
 	|unset_dialogue_flag
++my_scripts
+	|rules_list
+	|add_rule
+	|jail_player
