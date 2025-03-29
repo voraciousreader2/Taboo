@@ -20,10 +20,10 @@
 		|rTempleCItemRoom
 	+TempleP
 		|rTemplePProto
+		|rTempleP0
 		|rTemplePWaterIntro
 		|rTempleP2
 		|rTempleP1
-		|rTempleP0
 	+TempleJ
 		|rTempleJ1
 		|rTempleJ2
