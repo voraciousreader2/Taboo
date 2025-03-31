@@ -9,7 +9,7 @@ walljumpboost=0
 djump=1
 onGround=true
 coyoteTime=global.coyote_time
-
+groundjump=false
 if (onfire) kill_player()
 
 with (JumpRefresher) active=1

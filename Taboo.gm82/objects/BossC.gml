@@ -48,6 +48,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+
 instance_create(x,y,Phase1C)
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -89,27 +90,28 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+if(key_skip(vi_pressed)){skip_intro=true;}
 if(start) // intro
 {
-active=true; start=false
-if(!skip_intro)
-{
-intro=instance_create(x,y,BossIntroduction)
+active=true; start=false; alarm[2]=50;
+if(!instance_exists(BossIntroduction))
+{intro=instance_create(x,y,BossIntroduction)
 intro.font=fntBoss;
-intro.str="King Crusher"; intro.str2="URRG!";
-alarm[2]=50;
-}
-else{alarm[2]=1}
+intro.str="King Crusher"; intro.str2="URRG!";}
 
 // loop music
 
 if(!snd_check)
 {
+snd_check=true;
 sound_play("sndThwomp")
 sound_loop("bgmBossC"); sound_set_loop_points("bgmBossC",20,154)
 }
 
 }
+
+if(skip_intro && !instance_exists(Phase1C))
+{vspeed=6}
 
 
 if(!Player.dead)// crusher behavior
@@ -144,7 +146,7 @@ with(BossHPBar){hp_counter+=1}
 alarm[3]=50;
 }
 
-if(HP<=8 && phase_counter==1) // end of phase 1
+if(HP<=8 && phase_counter==1) // end of phase 2
 {
 phase_counter+=1;
 with(BossHPBar){hp_counter+=1}

@@ -5,7 +5,6 @@ action_id=603
 applies_to=self
 */
 active=true; rule=1;
-groundjump=false;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -25,7 +24,7 @@ if(Player.djump==Player.maxjumps && active)
  break;
 
 case 2:
-if(Player.djump<Player.maxjumps && active &&key_jump(vi_pressed))
+if(Player.groundjump && active && key_jump(vi_pressed))
 {jail_player();}
 break;
 

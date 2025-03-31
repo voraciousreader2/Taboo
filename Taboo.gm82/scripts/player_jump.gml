@@ -40,6 +40,9 @@ else if (instance_place(x,y+vflip,FlipBlock)) // flip block
             coyoteTime=0
             jump_timer=0
             onGround=false
+
+            groundjump=true
+
             if (instance_place(x,y+1,GuyWater)) onfire=false
     } else if (global.debug_jump
         || (djump<maxjumps || instance_place(x,y+1*vflip,Water2) || swt=="Water2")

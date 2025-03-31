@@ -48,6 +48,7 @@ dotkid=false
 telekid=false
 onfire=false
 vvvvvv=false
+groundjump=false
 
 cherried=false
 cherried_antigrav=false
