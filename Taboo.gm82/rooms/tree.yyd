@@ -20,6 +20,9 @@
 		|rTempleCItemRoom
 	+TempleP
 		|rTemplePProto
+		|rTemplePBossTest
+		|rTemplePItemRoom
+		|rTempleP3
 		|rTempleP0
 		|rTemplePWaterIntro
 		|rTempleP1

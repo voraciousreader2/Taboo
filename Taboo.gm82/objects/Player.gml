@@ -48,7 +48,10 @@ dotkid=false
 telekid=false
 onfire=false
 vvvvvv=false
+
+//gimmicks
 groundjump=false
+wet_feet=false
 
 cherried=false
 cherried_antigrav=false

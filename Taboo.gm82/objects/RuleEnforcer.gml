@@ -28,6 +28,11 @@ if(Player.groundjump && active && key_jump(vi_pressed))
 {jail_player();}
 break;
 
+case 3:
+if(Player.wet_feet && active)
+{jail_player();}
+break;
+
 }
 
 }

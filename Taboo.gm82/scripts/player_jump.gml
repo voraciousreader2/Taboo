@@ -15,6 +15,9 @@ if (vvvvvv) {
 else if (instance_place(x,y+vflip,FlipBlock)) // flip block
 {flip_player(); sound_play_auto("sndFlip")}
   else if (!hang && !onVineL && !onVineR) {
+  // jump counter
+
+
     //get shape water type
     var sw,swt;
     sw=instance_place(x,y,ShapeWater)
@@ -29,6 +32,7 @@ else if (instance_place(x,y+vflip,FlipBlock)) // flip block
         || swt=="Water1"
         || ladderjump) {
             //floor jump
+             with(JumpCounter){counter-=1}
             vspeed=-jump*vflip
             if (global.use_momentum_values) {
                 with (instance_place(x,y+vflip,Platform)) other.hspeed+=hspeed
@@ -49,6 +53,7 @@ else if (instance_place(x,y+vflip,FlipBlock)) // flip block
         || infjump
         && !(beamstate&beam_onejump)) {
             //double jump
+             with(JumpCounter){counter-=1}
             vspeed=-jump2*vflip
             sound_play_auto("sndDJump")
             if (djump<maxjumps) djump+=1
