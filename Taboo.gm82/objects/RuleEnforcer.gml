@@ -33,6 +33,13 @@ if(Player.wet_feet && active)
 {jail_player();}
 break;
 
+case 4:
+
+if( (Player.vflip==1 && Player.vspeed>=7) || (Player.vflip==-1 && Player.vspeed<=-7))
+{jail_player();}
+
+break;
+
 }
 
 }

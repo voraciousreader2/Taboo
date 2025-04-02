@@ -22,11 +22,12 @@
 		|rTemplePProto
 		|rTemplePBossTest
 		|rTemplePItemRoom
-		|rTempleP3
 		|rTempleP0
 		|rTemplePWaterIntro
 		|rTempleP1
 		|rTempleP2
+		|rTempleP3
+		|rTempleP4
 	+TempleJ
 		|rTempleJ1
 		|rTempleJ2

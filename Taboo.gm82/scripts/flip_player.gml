@@ -16,4 +16,5 @@ else if (!dead) {
         djump=1
         correct_player_mask()
     }
+
 }

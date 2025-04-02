@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-active=true; cooldown=0; killer=true;
+active=true; cooldown=0; killer=true; max_cool=25;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -34,7 +34,7 @@ if(place_meeting(x,y,Block)) // hit a wall
 {
 sound_play("sndThud")
 move_outside_solid(180+direction,-1)
-active=false; speed=0; cooldown=50;
+active=false; speed=0; cooldown=max_cool;
 }
 
 if(cooldown<=0) // cooldown
