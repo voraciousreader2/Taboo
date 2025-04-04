@@ -40,6 +40,10 @@ if( (Player.vflip==1 && Player.vspeed>=7) || (Player.vflip==-1 && Player.vspeed<
 
 break;
 
+case 5:
+if(key_jump(vi_pressed)){jail_player();}
+break;
+
 }
 
 }

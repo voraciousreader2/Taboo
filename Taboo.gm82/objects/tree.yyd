@@ -545,6 +545,8 @@
 		|Tree
 		+BossP
 			|JumpCounter
+			|BossSaveP
+			|BossP
 	|SaveBook
 	|Scroll
 |PlayerStart

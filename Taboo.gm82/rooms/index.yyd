@@ -28,7 +28,7 @@ rGimmickTest
 rDeathTest
 rTemplePProto
 
-rTempleCProto
+
 rTempleJ1
 rTempleJ2
 rTempleJ3
@@ -54,3 +54,5 @@ rTempleP3
 rTemplePItemRoom
 rTemplePBossTest
 rTempleP4
+rTempleP5
+rTemplePBoss

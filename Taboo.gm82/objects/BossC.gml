@@ -9,7 +9,7 @@ phase_counter=0;
 start=false; active=false; defeated=false;
 skip_intro=false; iframes=false;
 snd_check=sound_isplaying("bgmBossC")
-HP=24; maxHP=HP;
+HP=30; maxHP=HP;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -110,7 +110,7 @@ sound_loop("bgmBossC"); sound_set_loop_points("bgmBossC",20,154)
 
 }
 
-if(skip_intro && !instance_exists(Phase1C))
+if(skip_intro && !instance_exists(Phase1C) && !instance_exists(BreakBlock))
 {vspeed=6}
 
 
@@ -139,14 +139,14 @@ if(y<112){y=112; vspeed=0} // height reset
 
 
 
-if(HP<=16 && phase_counter==0) // end of phase 1
+if(HP<=20 && phase_counter==0) // end of phase 1
 {
 phase_counter+=1;
 with(BossHPBar){hp_counter+=1}
 alarm[3]=50;
 }
 
-if(HP<=8 && phase_counter==1) // end of phase 2
+if(HP<=10 && phase_counter==1) // end of phase 2
 {
 phase_counter+=1;
 with(BossHPBar){hp_counter+=1}

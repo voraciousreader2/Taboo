@@ -8,7 +8,6 @@
 	|rGimmickTest
 	|rDeathTest
 	+TempleC
-		|rTempleCProto
 		|rTempleC0
 		|rBossTestC
 		|rTempleC1
@@ -21,13 +20,15 @@
 	+TempleP
 		|rTemplePProto
 		|rTemplePBossTest
-		|rTemplePItemRoom
+		|rTemplePBoss
 		|rTempleP0
 		|rTemplePWaterIntro
 		|rTempleP1
 		|rTempleP2
 		|rTempleP3
 		|rTempleP4
+		|rTempleP5
+		|rTemplePItemRoom
 	+TempleJ
 		|rTempleJ1
 		|rTempleJ2
