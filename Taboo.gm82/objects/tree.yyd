@@ -547,6 +547,10 @@
 			|JumpCounter
 			|BossSaveP
 			|BossP
+			|Phase2P
+			|WrapCherry
+			|Phase1P
+			|CrossCherry
 	|SaveBook
 	|Scroll
 |PlayerStart
