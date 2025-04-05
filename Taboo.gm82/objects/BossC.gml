@@ -97,7 +97,7 @@ active=true; start=false; alarm[2]=50;
 if(!instance_exists(BossIntroduction))
 {intro=instance_create(x,y,BossIntroduction)
 intro.font=fntBoss;
-intro.str="King Crusher"; intro.str2="URRG!";}
+intro.str="Damocles"; intro.str2="King Crusher";}
 
 // loop music
 

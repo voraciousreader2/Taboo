@@ -52,7 +52,7 @@ vvvvvv=false
 //gimmicks
 groundjump=false
 wet_feet=false
-
+jailed=false
 
 cherried=false
 cherried_antigrav=false

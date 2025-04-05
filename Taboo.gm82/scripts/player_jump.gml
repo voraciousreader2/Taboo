@@ -14,6 +14,7 @@ if (vvvvvv) {
 }
 else if (instance_place(x,y+vflip,FlipBlock)) // flip block
 {flip_player(); sound_play_auto("sndFlip")}
+else if(instance_place(x,y+vflip,AngryWater)){kill_player()}
   else if (!hang && !onVineL && !onVineR) {
   // jump counter
 

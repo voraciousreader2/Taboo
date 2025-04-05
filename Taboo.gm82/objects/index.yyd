@@ -522,7 +522,7 @@ SJumpBlock
 BlueCoin
 CoinBlock
 MiniCage
-RuleTest
+
 FieldSJ
 BossJ
 BossSaveJ
@@ -566,3 +566,5 @@ WrapCherry
 Phase1P
 CrossCherry
 Phase2P
+RainbowCherry
+Phase3P

@@ -18,7 +18,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if(active && !Player.dead && place_meeting(x,y-Player.vspeed,Player))
+if(active && !Player.dead && place_meeting(x,y-Player.vspeed,Player) && !Player.jailed)
 {
 Player.vspeed=-10*Player.vflip;
 active=false;

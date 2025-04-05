@@ -44,7 +44,13 @@ case 5:
 if(key_jump(vi_pressed)){jail_player();}
 break;
 
+case 254:
+
+
+break;
+
 }
+
 
 }
 #define Other_4

@@ -13,6 +13,11 @@ skip_intro=false;
 
 col1=c_red; col2=c_yellow; col3=c_yellow;
 HP=30; maxHP=HP;
+
+bag_phase=ds_bag_create()
+ds_bag_add(bag_phase, Phase1P);
+ds_bag_add(bag_phase, Phase2P);
+ds_bag_add(bag_phase, Phase3P);
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -38,14 +43,18 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+ds_bag_clear(bag_phase);
+ds_bag_destroy(bag_phase);
+w=instance_create(368,272,Warp);
+w.image_xscale=2; w.image_yscale=2;
+
 instance_destroy()
-instance_create(400,304,Warp)
 #define Alarm_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=605
 invert=0
-arg0=begin phase 1
+arg0=begin moving
 */
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -55,8 +64,26 @@ applies_to=self
 active=true; iframes=false;
 dir=random_range(30,60)+90*irandom_range(0,3);
 speed=4; direction=dir;
+alarm[3]=1;
+#define Alarm_3
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=begin phase
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+iframes=false;
+current_phase=ds_bag_grab(bag_phase)
+instance_create(400,304,current_phase)
+
 //instance_create(400,304,Phase1P)
-instance_create(x,y,Phase2P)
+//instance_create(x,y,Phase2P)
+//instance_create(400,304,Phase3P)
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -69,9 +96,9 @@ if(start) // intro
 {
  start=false; alarm[2]=50;
 if(!instance_exists(BossIntroduction))
-{intro=instance_create(x,y,BossIntroduction)
+{intro=instance_create(x+32,y-32,BossIntroduction)
 intro.font=fntBoss;
-intro.str="Ygramul"; intro.str2="The Multiple";}
+intro.str="Apple of Discord"; intro.str2="Forbidden Fruit";}
 
 // loop music
 
@@ -85,9 +112,32 @@ sound_loop("bgmBossP"); sound_set_loop_points("bgmBossP",0,124.5)
 if(skip_intro)
 {alarm[2]=1; skip_intro=false}
 
+if(HP<=20 && phase_counter==0)
+{
+phase_counter+=1;
+instance_destroy_id(current_phase);
+with(WrapCherry){instance_destroy();}
+with(RainbowCherry){instance_destroy();}
+with(CrossCherry){instance_destroy();}
+alarm[3]=50; iframes=true;
+}
+
+if(HP<=10 && phase_counter==1)
+{
+phase_counter+=1;
+instance_destroy_id(current_phase);
+with(WrapCherry){instance_destroy();}
+with(RainbowCherry){instance_destroy();}
+with(CrossCherry){instance_destroy();}
+alarm[3]=50; iframes=true;
+}
+
+
 if(HP<=0) //defeated
 {defeated=true;
 with(WrapCherry){instance_destroy();}
+with(RainbowCherry){instance_destroy();}
+with(CrossCherry){instance_destroy();}
  alarm[1]=1;}
 #define Collision_Player
 /*"/*'/**//* YYD ACTION

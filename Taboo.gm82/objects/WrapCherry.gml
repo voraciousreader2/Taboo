@@ -12,7 +12,7 @@ action_id=603
 applies_to=self
 */
 killer=true;
-direction=BossP.dir+90; speed=2;
+direction=BossP.dir+90; speed=3;
 #define Collision_Player
 /*"/*'/**//* YYD ACTION
 lib_id=1

@@ -539,7 +539,6 @@
 	+Rules
 		|AngryWater
 		|MiniCage
-		|RuleTest
 		|RuleEnforcer
 		|Spring
 		|Tree
@@ -549,8 +548,10 @@
 			|BossP
 			|Phase2P
 			|WrapCherry
+			|RainbowCherry
 			|Phase1P
 			|CrossCherry
+			|Phase3P
 	|SaveBook
 	|Scroll
 |PlayerStart
