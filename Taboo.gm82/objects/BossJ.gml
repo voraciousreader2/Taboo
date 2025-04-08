@@ -205,8 +205,12 @@ sound_play("sndHit")
 }
 else
 {
-with(other){x=xprevious;y=yprevious direction=direction+180;}
-sound_play("sndBoing")
+with(other)
+{
+x=xprevious;y=yprevious; direction=direction+180;
+if(!bounce){sound_play("sndBoing")}
+bounce=true;
+}
 }
 #define Draw_0
 /*"/*'/**//* YYD ACTION

@@ -8,7 +8,7 @@ for(i=0; i<=7; i+=1)
 {
 for(j=0; j<=5; j+=1)
 {
-instance_create(50+100*i,50+100*j,WrapCherry)
+instance_create(50+103*i,50+105*j,WrapCherry)
 }
 }
 #define Destroy_0

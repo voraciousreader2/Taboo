@@ -5,7 +5,7 @@ action_id=603
 applies_to=self
 */
 down=false;
-alarm[0]=50;
+alarm[0]=100;
 instance_create(x,y,FieldD)
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
@@ -25,5 +25,5 @@ instance_create(x,y,FieldU);
 w=instance_place(x,y,FieldD);
 with(w){instance_destroy()}
 }
-alarm[0]=50
+alarm[0]=100
 down=!down;

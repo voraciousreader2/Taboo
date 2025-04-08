@@ -95,7 +95,7 @@ if(start) // intro
 {
 active=true; start=false; alarm[2]=50;
 if(!instance_exists(BossIntroduction))
-{intro=instance_create(x,y,BossIntroduction)
+{intro=instance_create(x+8,y,BossIntroduction)
 intro.font=fntBoss;
 intro.str="Damocles"; intro.str2="King Crusher";}
 
@@ -180,8 +180,12 @@ sound_play("sndHit")
 }
 else
 {
-with(other){x=xprevious;y=yprevious; direction=direction+180;}
-sound_play("sndBoing")
+with(other)
+{
+x=xprevious;y=yprevious; direction=direction+180;
+if(!bounce){sound_play("sndBoing")}
+bounce=true;
+}
 }
 #define Draw_0
 /*"/*'/**//* YYD ACTION

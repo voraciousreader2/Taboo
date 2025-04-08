@@ -11,6 +11,8 @@ dead=instance_place(x,y,BulletBlock)
 storex=1
 storey=1
 storea=0
+
+bounce=false
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
