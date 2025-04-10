@@ -38,8 +38,10 @@ action_id=603
 applies_to=self
 */
 sound_stop_all()
-w=instance_create(368,128,Warp);
+w=instance_create(368,128,FadeWarp);
 w.image_xscale=2; w.image_yscale=2;
+w.roomTo=rHub;
+w.faderate=0.02; w.unfaderate=0.02;
 instance_destroy();
 #define Step_0
 /*"/*'/**//* YYD ACTION

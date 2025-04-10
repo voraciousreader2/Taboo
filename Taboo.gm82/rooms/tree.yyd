@@ -5,11 +5,11 @@
 +Game
 	|rmDifficulty
 	|rmTemplate
+	|rHub
 	|rGimmickTest
 	|rDeathTest
 	+TempleC
 		|rTempleC0
-		|rBossTestC
 		|rTempleC1
 		|rTempleC2
 		|rTempleC3

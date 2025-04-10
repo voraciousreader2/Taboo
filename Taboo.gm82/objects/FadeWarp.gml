@@ -5,7 +5,7 @@ action_id=603
 applies_to=self
 */
 event_inherited()
-sprite_index=sprWarp
+sprite_index=sprPortal
 faderate=0.15
 unfaderate=0.15
 origin=room

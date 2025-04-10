@@ -43,12 +43,17 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+if(active)
+{
+sound_play("sndMegaDelfruit")
 ds_bag_clear(bag_phase);
 ds_bag_destroy(bag_phase);
-w=instance_create(368,272,Warp);
+w=instance_create(368,272,FadeWarp);
 w.image_xscale=2; w.image_yscale=2;
-
-instance_destroy()
+w.roomTo=rHub;
+w.faderate=0.02; w.unfaderate=0.02;
+active=false;}
+//instance_destroy()
 #define Alarm_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -133,8 +138,10 @@ alarm[3]=50; iframes=true;
 }
 
 
-if(HP<=0) //defeated
+if(HP<=0 && active) //defeated
 {defeated=true;
+sound_stop_all();
+
 with(WrapCherry){instance_destroy();}
 with(RainbowCherry){instance_destroy();}
 with(CrossCherry){instance_destroy();}
@@ -145,7 +152,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-kill_player()
+if(!defeated){kill_player()}
 #define Collision_Bullet
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -193,9 +200,10 @@ col3=c_white;
 else
 {col3=merge_color_corrected(col1,col2,HP/maxHP)}
 
-
+if(defeated){draw_set_alpha(0.5)}
 
 draw_cherry(x,y,4,4,0,col3)
+draw_reset();
 
 if(instance_exists(BossIntroduction) && !skip_intro)
 {
