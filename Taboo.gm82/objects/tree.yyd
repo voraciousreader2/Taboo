@@ -554,6 +554,10 @@
 			|Phase3P
 	|SaveBook
 	|Scroll
+	+Chaos
+		|SafeZone
+		|ChaosEnforcer
+		|ChaosBlock
 |PlayerStart
 |Block
 |Platform

@@ -36,5 +36,7 @@
 		|rTempleJItemRoom
 		|rTempleJBoss
 	+Chaos
+		|rChaos0
 	+Credits
-	+NeedleHub
+	+Order
+		|rOrder0

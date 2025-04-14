@@ -518,3 +518,6 @@ sprBossBulletC
 sprPlatformP
 sprSpring
 sprTree
+sprSafeZone
+sprChaosBlock
+sprSafe

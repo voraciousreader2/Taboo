@@ -510,10 +510,13 @@
 	|sprBulletsAll
 	|sprOrbBlue
 	|sprBossSave
+	|sprSafe
 	|sprWarning
 	|sprWarningSquare
 	|sprPlatformP
 	|sprTree
+	|sprSafeZone
+	|sprChaosBlock
 +Jopagu
 	|sprCage
 	|sprCageMask
