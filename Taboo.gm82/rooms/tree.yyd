@@ -37,8 +37,13 @@
 		|rTempleJBoss
 	+Chaos
 		|rChaos0
-		|rChaos2
 		|rChaos1
+		|rChaos2
+		|rChaos3
+		|rChaos4
+		|rChaos5
+		|rChaos6
+		|rChaos7
 	+Credits
 	+Order
 		|rOrder0

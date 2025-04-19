@@ -486,15 +486,15 @@
 		|sprBossBulletC
 	|sprBook
 	|sprBookOpen
+	|sprBookDown
 	+Rules
 		|sprAngryWater
 		|sprVineL
 		|sprVineR
 		|sprSpring
+		|sprMiniCageMask
 	|sprArrowUp
 	|sprArrowDown
-	|sprVoracious
-	|sprMiniCageMask
 	|sprPortal
 	|sprMiniCage
 	+spikesP
@@ -516,7 +516,12 @@
 	|sprPlatformP
 	|sprTree
 	|sprSafeZone
+	|sprCrusherKing
+	|sprQueenSheet
+	|sprQueenHead
 	|sprChaosBlock
+	+Credits
+		|sprVoracious
 +Jopagu
 	|sprCage
 	|sprCageMask
@@ -541,4 +546,3 @@
 	|sprSpikeLeftTrap
 	|sprSpikeRightTrap
 	|sprSpikeUpTrap
-|sprCrusherKing
