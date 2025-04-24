@@ -1,3 +1,4 @@
 //gm82 fields begin
-roomTo=rChaos8
+type="grass"
+tileset=tileHub
 //gm82 fields end

@@ -517,11 +517,20 @@
 	|sprTree
 	|sprSafeZone
 	|sprCrusherKing
-	|sprQueenSheet
-	|sprQueenHead
-	|sprChaosBlock
 	+Credits
 		|sprVoracious
+	+Chaos
+		|sprChaosBlock
+		+Boss
+			|sprQueenSheet
+			|sprPalmD
+			|sprPalmU
+			|sprMidFinger
+			|sprQueenHead
+		|spikeEvilU
+		|spikeEvilR
+		|spikeEvilD
+		|spikeEvilL
 +Jopagu
 	|sprCage
 	|sprCageMask

@@ -423,6 +423,57 @@ action_id=605
 invert=0
 arg0=rule 8: waters + random rule
 */
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+if(rule==8)
+{
+
+bag_x1=ds_bag_create(); bag_y1=ds_bag_create();
+bag_x2=ds_bag_create(); bag_y2=ds_bag_create();
+bag_x3=ds_bag_create(); bag_y3=ds_bag_create();
+bag_x4=ds_bag_create(); bag_y4=ds_bag_create();
+bag_x5=ds_bag_create(); bag_y5=ds_bag_create();
+
+
+for(i=1;i<=11; i+=1)
+{
+ds_bag_add(bag_x1,96+60*i+random_range(-32,32));ds_bag_add(bag_y1,50*i+random_range(-32,32));
+ds_bag_add(bag_x2,64+60*i++random_range(-32,32));ds_bag_add(bag_y2,50*i+random_range(-32,32));
+ds_bag_add(bag_x3,32+60*i++random_range(-32,32));ds_bag_add(bag_y3,50*i+random_range(-32,32));
+ds_bag_add(bag_x4,96+60*i+random_range(-32,32));ds_bag_add(bag_y4,50*i+random_range(-32,32));
+ds_bag_add(bag_x5,96+60*i+random_range(-32,32));ds_bag_add(bag_y5,50*i+random_range(-32,32));
+}
+
+repeat(11)
+{
+
+block1=instance_create(ds_bag_grab(bag_x1),ds_bag_grab(bag_y1),ChaosBlock);
+water1=instance_create(ds_bag_grab(bag_x2),ds_bag_grab(bag_y2),Water1);
+angrywater=instance_create(ds_bag_grab(bag_x3),ds_bag_grab(bag_y3),AngryWater);
+water2=instance_create(ds_bag_grab(bag_x4),ds_bag_grab(bag_y4),Water2);
+block2=instance_create(ds_bag_grab(bag_x5),ds_bag_grab(bag_y5),ChaosBlock);
+
+with(block1){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
+with(water1){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
+with(angrywater){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
+with(water2){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
+with(block2){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
+
+}
+
+
+
+
+ds_bag_destroy(bag_x1); ds_bag_destroy(bag_y1);
+ds_bag_destroy(bag_x2); ds_bag_destroy(bag_y2);
+ds_bag_destroy(bag_x3); ds_bag_destroy(bag_y3);
+ds_bag_destroy(bag_x4); ds_bag_destroy(bag_y4);
+ds_bag_destroy(bag_x5); ds_bag_destroy(bag_y5);
+
+}
 #define Step_1
 /*"/*'/**//* YYD ACTION
 lib_id=1

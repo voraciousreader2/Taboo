@@ -1,3 +1,3 @@
 //gm82 fields begin
-roomTo=rChaos8
+rule=8
 //gm82 fields end

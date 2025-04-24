@@ -1,3 +1,3 @@
 //gm82 fields begin
-roomTo=rChaos8
+BGM="bgmTempleCh"
 //gm82 fields end
