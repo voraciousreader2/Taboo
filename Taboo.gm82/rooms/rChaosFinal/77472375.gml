@@ -1,3 +1,3 @@
 //gm82 fields begin
-roomTo=rChaosFinal
+hsp=4
 //gm82 fields end

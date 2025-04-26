@@ -3,3 +3,5 @@
 
 add_gizmo(Gizmo)
 add_gizmo(DialogueHandlerTriggered)
+add_gizmo(TrapNaive)
+add_gizmo(CutsceneHandler)

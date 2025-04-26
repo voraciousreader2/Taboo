@@ -40,7 +40,7 @@ with(Phase1C){instance_destroy();}
 with(Phase2C){instance_destroy();}
 with(SpikeD){if(speed!=0){instance_destroy();}}
 with(BossBullet){alpha=0.5; killer=false}
-instance_create(x-32,y-32,Explosion);
+instance_create(x-32,y-32,BossExplosion);
 instance_destroy();
 #define Alarm_2
 /*"/*'/**//* YYD ACTION

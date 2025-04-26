@@ -1,3 +1,4 @@
 //gm82 fields begin
-destroy_on_start=true
+vsp=4
+index=0
 //gm82 fields end

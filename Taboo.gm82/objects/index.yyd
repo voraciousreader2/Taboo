@@ -549,7 +549,7 @@ Pillar
 CrusherTroll
 BossSaveC
 BossC
-Explosion
+BossExplosion
 Phase1C
 BossBullet
 Phase2C
@@ -572,3 +572,10 @@ SafeZone
 ChaosEnforcer
 ChaosBlock
 FunnyText
+TrapNaive
+Explosion
+GoldenSpikeU
+GoldenSpikeD
+CutsceneHandler
+BossO
+BossCh

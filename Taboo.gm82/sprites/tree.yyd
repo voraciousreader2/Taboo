@@ -531,6 +531,9 @@
 		|spikeEvilR
 		|spikeEvilD
 		|spikeEvilL
+		|sprNaive
+	+Order
+		|sprEye
 +Jopagu
 	|sprCage
 	|sprCageMask

@@ -530,6 +530,7 @@
 		+BossC
 			|BossSaveC
 			|BossC
+			|BossExplosion
 			|Explosion
 			|Phase1C
 			|BossBullet
@@ -559,6 +560,15 @@
 		|SafeZone
 		|ChaosEnforcer
 		|ChaosBlock
+		|TrapNaive
+		+Boss
+			|BossCh
+	+Order
+		|GoldenSpikeU
+		|GoldenSpikeD
+		|CutsceneHandler
+		+Boss
+			|BossO
 |PlayerStart
 |Block
 |Platform

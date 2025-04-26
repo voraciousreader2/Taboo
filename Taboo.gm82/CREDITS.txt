@@ -38,7 +38,7 @@ Soundtrack:
 
 
 Title: Demon of Darkness by Takami Asano (Devil Survivor OST)
-Hub: Ice Grotto by Kevin Schilder (Heretic OST)
+Crossroad: Ice Grotto by Kevin Schilder (Heretic OST)
 Air Temple: Lobelia Cardinalis by Masanobu Matsunaga (Planet Puzzle League OST)
 Boss: Heavy Violence (Naruto OST)
 Stone Temple: Soul Sanctum by Cristopher Larkin (Hollow Knight OST)
