@@ -21,7 +21,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-w1=instance_create(976,288,Warp);
+w1=instance_create(976,288,FadeWarp);
 with(w1)
 {
 image_xscale=2; image_yscale=2;
@@ -30,7 +30,7 @@ roomTo=rOrder0;
 
 sound_play("sndWarp")
 
-w2=instance_create(1360,288,Warp);
+w2=instance_create(1360,288,FadeWarp);
 with(w2)
 {
 image_xscale=2; image_yscale=2;

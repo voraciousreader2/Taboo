@@ -47,6 +47,10 @@
 		|rChaos8
 		|rChaosFinal
 	+Credits
+		|rCreditsMakerO
+		|rCreditsEngine
+		|rCreditsInspo
+		|rCreditsTesters
 	+Order
 		|rOrder0
 		|rOrder1

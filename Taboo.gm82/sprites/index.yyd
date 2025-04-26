@@ -475,7 +475,7 @@ sprMiniCage
 sprMiniCageMask
 sprKBD
 sprKBU
-sprFieldSJ
+
 spikeUP
 spikeRP
 spikeDP
@@ -533,3 +533,6 @@ spikeEvilD
 spikeEvilL
 sprNaive
 sprEye
+sprTrollSJ
+sprAmeli
+sprYBMA

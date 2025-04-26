@@ -1,3 +1,3 @@
 //gm82 fields begin
-rule=4
+rule=3
 //gm82 fields end

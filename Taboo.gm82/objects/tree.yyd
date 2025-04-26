@@ -563,12 +563,17 @@
 		|TrapNaive
 		+Boss
 			|BossCh
+		|TrollCoin
+		|TrollSJ
 	+Order
 		|GoldenSpikeU
 		|GoldenSpikeD
 		|CutsceneHandler
 		+Boss
 			|BossO
+	+Credits
+		|CreditsWarp
+		|CreditsPortrait
 |PlayerStart
 |Block
 |Platform

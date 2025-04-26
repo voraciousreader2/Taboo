@@ -458,7 +458,6 @@
 		|sprCoinBlock
 		|sprKBD
 		|sprKBU
-		|sprFieldSJ
 		|sprFieldSJ2
 		+BossJ
 			|sprMageIdle
@@ -519,6 +518,8 @@
 	|sprCrusherKing
 	+Credits
 		|sprVoracious
+		|sprAmeli
+		|sprYBMA
 	+Chaos
 		|sprChaosBlock
 		+Boss
@@ -532,6 +533,7 @@
 		|spikeEvilD
 		|spikeEvilL
 		|sprNaive
+		|sprTrollSJ
 	+Order
 		|sprEye
 +Jopagu
