@@ -504,7 +504,7 @@
 		+BossJ
 			|BossSaveJ
 			|BossJ
-			|BulletBlue
+			|BulletPetal
 			|Burst360
 			|PhaseLeft
 			|PhaseRight
@@ -530,7 +530,7 @@
 		+BossC
 			|BossSaveC
 			|BossC
-			|BossExplosion
+			|BossExplosionC
 			|Explosion
 			|Phase1C
 			|BossBullet
@@ -560,11 +560,24 @@
 		|SafeZone
 		|ChaosEnforcer
 		|ChaosBlock
-		|TrapNaive
-		+Boss
-			|BossCh
 		|TrollCoin
 		|TrollSJ
+		|TrapNaive
+		+Boss
+			|SineBullet
+			|BossCh
+			|BossSaveCh
+			|GoldenDiamond
+			|ShootLeft
+			|ShootRight
+			|HandL
+			|HandR
+			|BulletBurstRed
+			|SnakingBullet
+			|BlueAttack
+			|GreenAttack
+			|RedAttack
+			|YellowAttack
 	+Order
 		|GoldenSpikeU
 		|GoldenSpikeD

@@ -526,7 +526,7 @@ MiniCage
 FieldSJ
 BossJ
 BossSaveJ
-BulletBlue
+BulletPetal
 
 SpikeBlock
 Burst360
@@ -549,7 +549,7 @@ Pillar
 CrusherTroll
 BossSaveC
 BossC
-BossExplosion
+BossExplosionC
 Phase1C
 BossBullet
 Phase2C
@@ -583,3 +583,17 @@ TrollCoin
 TrollSJ
 CreditsWarp
 CreditsPortrait
+
+BossSaveCh
+GoldenDiamond
+ShootLeft
+ShootRight
+HandL
+HandR
+RedAttack
+BulletBurstRed
+SnakingBullet
+GreenAttack
+YellowAttack
+BlueAttack
+SineBullet

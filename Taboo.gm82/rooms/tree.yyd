@@ -37,6 +37,8 @@
 		|rTempleJBoss
 	+Chaos
 		|rChaos0
+		|rChaosBoss
+		|rChaosBossTest
 		|rChaos1
 		|rChaos2
 		|rChaos3

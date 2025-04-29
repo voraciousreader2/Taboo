@@ -1,7 +1,7 @@
-sprite=sprQueenHead
+sprite=sprQueenBoss
 visible=1
 solid=0
 persistent=0
-depth=0
+depth=1000
 parent=
 mask=

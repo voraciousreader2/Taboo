@@ -154,6 +154,7 @@ for (i=0;i<num;i+=1) {
     o[i].sprite_index=sprite
     o[i].depth=depth
     o[i].spinner_signature=true
+    o[i].image_blend=image_blend
     o[i].destroy_outside=false //only relevant for cherries
 }
 

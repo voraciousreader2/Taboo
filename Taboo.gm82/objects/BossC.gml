@@ -40,9 +40,15 @@ with(Phase1C){instance_destroy();}
 with(Phase2C){instance_destroy();}
 with(SpikeD){if(speed!=0){instance_destroy();}}
 with(BossBullet){alpha=0.5; killer=false}
-instance_create(x-32,y-32,BossExplosion);
+instance_create(x-32,y-32,BossExplosionC);
 instance_destroy();
 #define Alarm_2
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=begin phase 1
+*/
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
@@ -50,12 +56,6 @@ applies_to=self
 */
 
 instance_create(x,y,Phase1C)
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=605
-invert=0
-arg0=begin phase 1
-*/
 #define Alarm_3
 /*"/*'/**//* YYD ACTION
 lib_id=1
