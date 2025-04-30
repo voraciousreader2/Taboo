@@ -518,8 +518,14 @@
 	|sprCrusherKing
 	+Credits
 		|sprVoracious
+		|sprVoraciousInv
+		|sprSquarenex
+		|sprPOP
 		|sprAmeli
 		|sprYBMA
+		|sprDevilSurvivor
+		|sprJopagu
+		|sprP3P
 	+Chaos
 		+Boss
 			|sprQueenSheet

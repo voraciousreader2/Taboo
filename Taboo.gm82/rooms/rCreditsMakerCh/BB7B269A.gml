@@ -1,5 +1,5 @@
 //gm82 fields begin
-text="renex^2 engine"
-font=fntDialogue
+text="Voracious Reader"
+font=fntDialogueReallyBig
 halign=fa_center
 //gm82 fields end

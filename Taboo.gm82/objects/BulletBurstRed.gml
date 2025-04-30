@@ -6,15 +6,15 @@ applies_to=self
 */
 //image_speed=0; image_blend=c_red;
 image_alpha=0.5;
-cycle=80; num=8;
- alarm[0]=cycle/2; alarm[1]=cycle; killer=false;
+cycle=90; num=6;
+ alarm[0]=cycle/2; alarm[1]=cycle;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-killer=true; image_alpha=1
+ image_alpha=1
 #define Alarm_1
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -31,10 +31,3 @@ image_angle=direction;
 }
 }
 instance_destroy();
-#define Collision_Player
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-if(killer){kill_player()}

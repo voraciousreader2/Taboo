@@ -9,6 +9,7 @@ if(place_meeting(x,y,Player))
 set_dialogue_flag("BossFlagC", true)
 autosave_asap()
 with(BossCh){start=true}
+with(HandHandler){active=true}
 with(BossHPBar){active=true}
 with(BossSaveCh){instance_destroy();}
 }

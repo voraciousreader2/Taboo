@@ -1,5 +1,5 @@
 //gm82 fields begin
-text="renex^2 engine"
+text="Shin Megami Tensei: # Devil Survivor"
 font=fntDialogue
 halign=fa_center
 //gm82 fields end

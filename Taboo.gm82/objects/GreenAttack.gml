@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=40;
+alarm[0]=50;
 side=choose(1,-1);
 #define Alarm_0
 /*"/*'/**//* YYD ACTION

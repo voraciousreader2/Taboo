@@ -4,8 +4,15 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-image_speed=0; image_index=1;
-maxHP=10; HP=maxHP;
+image_speed=0; image_index=0;
+maxHP=8; HP=maxHP;
+iframes=false; defeated=false;
+#define Alarm_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
 iframes=false;
 #define Collision_Bullet
 /*"/*'/**//* YYD ACTION
@@ -18,15 +25,17 @@ with(other){instance_destroy();}
 
 if(!iframes)
 {
-with(HandL){iframes=false}
+if(instance_exists(HandL))
+{with(HandL){if(iframes){alarm[0]=80}}}
+
 HP-=1; sound_play("sndHit")
 iframes=true
-}
 
+}
 
 if(HP<=0)
 {
-iframes=true;
+iframes=true; defeated=true;
 vspeed=5;
 image_index=3;
 sound_play("sndMegaDelfruit")
@@ -44,6 +53,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if(iframes && HP>0){image_alpha=0.5}
-else{image_alpha=1}
+if(iframes && HP>0){image_blend=c_red}
+else{image_blend=c_white}
 draw_self()

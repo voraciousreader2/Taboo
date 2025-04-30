@@ -4,26 +4,26 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=40
+alarm[0]=50
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=80;
+alarm[0]=100;
 dir=random_range(30,150);
 radius=300; spd=4+random_range(-0.5,0.5);
-spin=choose(-1,1)*random_range(1.8,2.4)
+spin=choose(-1,1)*random_range(2.4,3)
 if(!Player.dead)
 {
 center_x=Player.x+radius*dcos(dir+180);
 center_y=Player.y+radius*dsin(dir+180);
 
-for(i=1; i<=3; i+=1)
+for(i=1; i<=4; i+=1)
 {
     s=instance_create(center_x,center_y,Spinner);
-    s.initial_angle=dir; s.radius=16*i;
+    s.initial_angle=dir; s.radius=8+10*i;
     s.cycle_length=spin;
     s.speed=spd;
     with(s)

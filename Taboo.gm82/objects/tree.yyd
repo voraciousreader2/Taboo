@@ -578,6 +578,7 @@
 			|GreenAttack
 			|RedAttack
 			|YellowAttack
+			|HandHandler
 	+Order
 		|GoldenSpikeU
 		|GoldenSpikeD
