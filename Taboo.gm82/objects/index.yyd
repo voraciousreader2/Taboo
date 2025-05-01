@@ -596,5 +596,16 @@ SnakingBullet
 GreenAttack
 YellowAttack
 BlueAttack
-SineBullet
+SineBulletD
 HandHandler
+SpinnerChaos
+QueenHead
+HeadHandler
+AvoidanceHPBar
+RedBuff
+GreenBuff
+BlueBuff
+YellowBuff
+SineBulletU
+GrayAttack
+BulletGray

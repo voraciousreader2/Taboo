@@ -564,7 +564,6 @@
 		|TrollSJ
 		|TrapNaive
 		+Boss
-			|SineBullet
 			|BossCh
 			|BossSaveCh
 			|GoldenDiamond
@@ -572,13 +571,26 @@
 			|ShootRight
 			|HandL
 			|HandR
-			|BulletBurstRed
-			|SnakingBullet
-			|BlueAttack
-			|GreenAttack
-			|RedAttack
-			|YellowAttack
 			|HandHandler
+			|SpinnerChaos
+			|QueenHead
+			|HeadHandler
+			|AvoidanceHPBar
+			+Attack
+				|YellowAttack
+				|YellowBuff
+				|RedAttack
+				|RedBuff
+				|GreenAttack
+				|GreenBuff
+				|BlueAttack
+				|BlueBuff
+				|SnakingBullet
+				|BulletBurstRed
+				|SineBulletD
+				|SineBulletU
+				|GrayAttack
+				|BulletGray
 	+Order
 		|GoldenSpikeU
 		|GoldenSpikeD

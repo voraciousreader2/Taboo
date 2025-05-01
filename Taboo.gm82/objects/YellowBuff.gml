@@ -4,14 +4,15 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=50
+alarm[0]=50;
+col=c_yellow;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=80;
+alarm[0]=50;
 dir=random_range(30,150);
 radius=300; spd=4+random_range(-0.5,0.5);
 spin=choose(-1,1)*random_range(2.4,3)
@@ -31,9 +32,9 @@ for(i=0; i<=5; i+=1)
     direction=point_direction(x,y,Player.x,Player.y);
      object=BossBullet; sprite=sprAvoidanceBulletSmall;
     image_blend=c_yellow;
-    num=2; max_num=2;
+    num=3; max_num=3;
     event_perform(ev_other,ev_room_start)
-    for(i=0; i<2; i+=1){o[i].image_speed=0;}
+    for(i=0; i<3; i+=1){o[i].image_speed=0;}
     }
 
 }

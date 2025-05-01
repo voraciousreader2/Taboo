@@ -4,13 +4,16 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-active=false; hand_counter=0;
+active=true; hand_counter=0;
 bag_hands=ds_bag_create()
 ds_bag_add(bag_hands,BlueAttack, GreenAttack, YellowAttack, RedAttack)
 att1=ds_bag_grab(bag_hands);
 att2=ds_bag_grab(bag_hands);
 att3=ds_bag_grab(bag_hands);
 att4=ds_bag_grab(bag_hands);
+
+instance_create(80,336,ShootLeft)
+instance_create(656,336,ShootRight)
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -24,8 +27,8 @@ active=false;
 instance_create(x,y,att1);
 instance_create(x,y,att2);
 
-with(HandL){image_index=1;}
-with(HandR){image_index=1;}
+with(HandL){image_index=1; iframes=false;}
+with(HandR){image_index=1; iframes=false;}
 }
 
 
@@ -69,5 +72,6 @@ if(hand_counter==2)
 {
 ds_bag_destroy(bag_hands)
 with(BossCh){phase_counter+=1}
+with(GoldenDiamond){instance_destroy()}
 instance_destroy()
 }

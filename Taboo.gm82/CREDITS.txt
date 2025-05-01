@@ -1,8 +1,9 @@
 TABOO
+
 version 1.0
 by Voracious Reader
 Release Date: xx/xx/2025 
-Created with Game Maker Studio 8.2 (renex engine)
+Created with Game Maker Studio 8.2 (renex² engine)
 
 "Trapped in a city that brings out the darkness in my heart..."
 
@@ -20,14 +21,15 @@ voraciousreader (Twitch)
 
 Assets:
 
-Shutterstock (backgrounds)
+Shutterstock (some backgrounds)
 Kayin, renex engine (IWBTG sprites and sound effects)
-Kickpixel (scroll and orb sprites)
+Kickpixel (orb sprites)
 freesound.org (several sfx)
 Prince of Persia: Warrior Within (several sfx)
 pieceofcheese (spike sprites)
-The Legend of Zelda (castle tileset)
+The Legend of Zelda: Oracle of Seasons (castle tileset)
 Final Fantasy Brave Exvius, I Wanna Maker, Chrono Trigger (boss sprites)
+Phoenotopia Awakening (book sprites)
 
 I forgot where I got the warp sprite from
 All other spikes/tilesets are original

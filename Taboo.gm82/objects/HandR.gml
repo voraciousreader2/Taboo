@@ -6,7 +6,7 @@ applies_to=self
 */
 image_speed=0; image_index=0;
 maxHP=8; HP=maxHP;
-iframes=false; defeated=false;
+iframes=true; defeated=false;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -35,10 +35,11 @@ iframes=true
 
 if(HP<=0)
 {
+if(!defeated){sound_play("sndMegaDelfruit")}
 iframes=true; defeated=true;
 vspeed=5;
 image_index=3;
-sound_play("sndMegaDelfruit")
+
 }
 #define Other_0
 /*"/*'/**//* YYD ACTION
@@ -53,6 +54,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if(iframes && HP>0){image_blend=c_red}
+if(iframes && HP>0 && HP<maxHP){image_blend=c_red}
 else{image_blend=c_white}
 draw_self()

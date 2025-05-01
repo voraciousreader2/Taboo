@@ -1,6 +1,7 @@
 //gm82 fields begin
 instance=rChaosFinal_C72FBAFB
 trigger_type="hard"
+sound="sndBlockBreak"
 advanced_movement=true
 path=pathD64
 path_endaction=path_action_stop
