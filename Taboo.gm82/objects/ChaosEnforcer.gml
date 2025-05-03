@@ -316,7 +316,7 @@ bag_x1=ds_bag_create(); bag_y1=ds_bag_create();
 bag_x2=ds_bag_create(); bag_y2=ds_bag_create();
 bag_x3=ds_bag_create(); bag_y3=ds_bag_create();
 bag_x4=ds_bag_create(); bag_y4=ds_bag_create();
-bag_x5=ds_bag_create(); bag_y5=ds_bag_create();
+//bag_x5=ds_bag_create(); bag_y5=ds_bag_create();
 
 
 for(i=1;i<=11; i+=1)
@@ -325,7 +325,7 @@ ds_bag_add(bag_x1,96+60*i+random_range(-32,32));ds_bag_add(bag_y1,50*i+random_ra
 ds_bag_add(bag_x2,64+60*i++random_range(-32,32));ds_bag_add(bag_y2,50*i+random_range(-32,32));
 ds_bag_add(bag_x3,32+60*i++random_range(-32,32));ds_bag_add(bag_y3,50*i+random_range(-32,32));
 ds_bag_add(bag_x4,48+60*i+random_range(-32,32));ds_bag_add(bag_y4,50*i+random_range(-32,32));
-ds_bag_add(bag_x5,80+60*i+random_range(-32,32));ds_bag_add(bag_y5,50*i+random_range(-32,32));
+//ds_bag_add(bag_x5,80+60*i+random_range(-32,32));ds_bag_add(bag_y5,50*i+random_range(-32,32));
 }
 
 
@@ -336,7 +336,7 @@ block1=instance_create(ds_bag_grab(bag_x1),ds_bag_grab(bag_y1),CoinBlock);
 block2=instance_create(ds_bag_grab(bag_x2),ds_bag_grab(bag_y2),CoinBlock);
 coin1=instance_create(ds_bag_grab(bag_x3),ds_bag_grab(bag_y3),BlueCoin);
 coin2=instance_create(ds_bag_grab(bag_x4),ds_bag_grab(bag_y4),BlueCoin);
-coin3=instance_create(ds_bag_grab(bag_x5),ds_bag_grab(bag_y5),BlueCoin);
+//coin3=instance_create(ds_bag_grab(bag_x5),ds_bag_grab(bag_y5),BlueCoin);
 
 with(block1){max_coin=irandom_range(1,5);
 if(place_meeting(x,y,SafeZone)){instance_destroy();}}
@@ -344,7 +344,7 @@ with(block2){max_coin=irandom_range(6,9);
 if(place_meeting(x,y,SafeZone)){instance_destroy();}}
 with(coin1){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
 with(coin2){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
-with(coin3){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
+//with(coin3){if(place_meeting(x,y,SafeZone)){instance_destroy();}}
 
 }
 
@@ -352,7 +352,7 @@ ds_bag_destroy(bag_x1); ds_bag_destroy(bag_y1);
 ds_bag_destroy(bag_x2); ds_bag_destroy(bag_y2);
 ds_bag_destroy(bag_x3); ds_bag_destroy(bag_y3);
 ds_bag_destroy(bag_x4); ds_bag_destroy(bag_y4);
-ds_bag_destroy(bag_x5); ds_bag_destroy(bag_y5);
+//ds_bag_destroy(bag_x5); ds_bag_destroy(bag_y5);
 
 
 

@@ -559,6 +559,8 @@
 		|sprTrollSJ
 	+Order
 		|sprEye
+		|sprEyeRainbow
+		|sprEyeRed
 +Jopagu
 	|sprCage
 	|sprCageMask
