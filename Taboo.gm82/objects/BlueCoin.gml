@@ -11,6 +11,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+sound_volume("sndCoin",0.5)
 sound_play("sndCoin");
 with(CoinBlock)
 {coin_counter+=1}

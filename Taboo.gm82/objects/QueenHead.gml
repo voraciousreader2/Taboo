@@ -43,7 +43,7 @@ if(HP>0 && !iframes && !defeated)
 {
 HP-=1;
 iframes=true; alarm[0]=200; image_blend=c_red;
-sound_play("sndHit")
+if(HP>0){sound_play("sndHit")}
 
 switch (att)
 {

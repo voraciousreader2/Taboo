@@ -54,6 +54,21 @@
 		|rCreditsEngine
 		|rCreditsInspo
 		|rCreditsTesters
+		|rCreditsStageH
+		|rCreditsStageJ
+		|rCreditsBossJ
+		|rCreditsStageC
+		|rCreditsBossC
+		|rCreditsStageP
+		|rCreditsBossP
+		|rCreditsStageO
+		|rCreditsBossO
+		|rCreditsStageCh
+		|rCreditsBossCh
+		|rClearO
+		|rClearCh
 	+Order
 		|rOrder0
 		|rOrder1
+		|rOrder2
+		|rOrder3

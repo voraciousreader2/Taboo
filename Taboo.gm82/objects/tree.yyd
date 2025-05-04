@@ -599,6 +599,7 @@
 			|BossO
 	+Credits
 		|CreditsWarp
+		|BranchWarp
 		|CreditsPortrait
 |PlayerStart
 |Block

@@ -46,6 +46,7 @@ global.release_mode=false
     //use this when you don't want the engine to remember the last game's options
     global.disable_settings_repo=false
 
+    global.ending="order"
 
 //difficulties
     //difficulty options:

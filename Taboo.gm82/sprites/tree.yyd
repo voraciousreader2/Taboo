@@ -483,6 +483,7 @@
 		|sprCenteredBlock
 		|sprExplosion
 		|sprBossBulletC
+		|sprCrusherKing
 	|sprBook
 	|sprBookOpen
 	|sprBookDown
@@ -516,7 +517,6 @@
 	|sprPlatformP
 	|sprTree
 	|sprSafeZone
-	|sprCrusherKing
 	+Credits
 		|sprVoracious
 		|sprVoraciousInv

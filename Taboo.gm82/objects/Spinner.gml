@@ -12,6 +12,7 @@ motion_type="circle"
 radius=80
 
 initial_angle=0
+image_speed=0
 
 time=0
 object=Cherry
@@ -155,6 +156,7 @@ for (i=0;i<num;i+=1) {
     o[i].depth=depth
     o[i].spinner_signature=true
     o[i].image_blend=image_blend
+    o[i].image_speed=image_speed
     o[i].destroy_outside=false //only relevant for cherries
 }
 
