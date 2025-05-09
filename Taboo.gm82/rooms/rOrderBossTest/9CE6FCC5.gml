@@ -1,3 +1,3 @@
 //gm82 fields begin
-max_coin=1
+destroy_on_start=true
 //gm82 fields end

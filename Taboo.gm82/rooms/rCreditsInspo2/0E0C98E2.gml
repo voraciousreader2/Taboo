@@ -1,3 +1,3 @@
 //gm82 fields begin
-max_coin=1
+roomTo=rCreditsTesters
 //gm82 fields end

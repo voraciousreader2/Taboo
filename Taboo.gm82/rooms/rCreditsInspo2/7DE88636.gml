@@ -1,3 +1,3 @@
 //gm82 fields begin
-max_coin=1
+spr=sprVorovo
 //gm82 fields end

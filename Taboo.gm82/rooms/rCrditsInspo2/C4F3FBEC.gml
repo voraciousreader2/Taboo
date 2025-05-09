@@ -1,3 +1,4 @@
 //gm82 fields begin
-max_coin=9
+spr=sprP3P
 //gm82 fields end
+sprite_index=sprP3P

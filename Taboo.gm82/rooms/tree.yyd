@@ -53,6 +53,7 @@
 		|rCreditsMakerCh
 		|rCreditsEngine
 		|rCreditsInspo
+		|rCreditsInspo2
 		|rCreditsTesters
 		|rCreditsStageH
 		|rCreditsStageJ
@@ -72,3 +73,5 @@
 		|rOrder1
 		|rOrder2
 		|rOrder3
+		|rOrderFinale
+		|rOrderBossTest

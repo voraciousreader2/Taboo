@@ -1,3 +1,4 @@
 //gm82 fields begin
-max_coin=1
+type="grass"
+tileset=tileHub
 //gm82 fields end
