@@ -1,3 +1,3 @@
 //gm82 fields begin
-BGM="bgmTempleO"
+max_coin=2
 //gm82 fields end

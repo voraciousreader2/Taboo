@@ -1,3 +1,3 @@
 //gm82 fields begin
-BGM="bgmBossO"
+max_coin=1
 //gm82 fields end

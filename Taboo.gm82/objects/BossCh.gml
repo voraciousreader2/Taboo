@@ -109,7 +109,7 @@ att3=ds_bag_grab(bag_av);
 att4=ds_bag_grab(bag_av);
 ds_bag_destroy(bag_av)
 
-av=instance_create(250,64,AvoidanceHPBar);
+av=instance_create(250,64,AvoidanceHPBarCh);
 av.length=400;
 alarm[1]=50;
 }

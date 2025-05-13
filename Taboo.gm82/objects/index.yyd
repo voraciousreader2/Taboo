@@ -601,7 +601,7 @@ HandHandler
 SpinnerChaos
 QueenHead
 HeadHandler
-AvoidanceHPBar
+AvoidanceHPBarCh
 RedBuff
 GreenBuff
 BlueBuff
@@ -610,3 +610,8 @@ SineBulletU
 GrayAttack
 BulletGray
 BranchWarp
+BossSaveO
+AvoidanceHPBarO
+EyeFollow
+TrailBullet
+Attack1

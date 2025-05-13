@@ -575,8 +575,8 @@
 			|SpinnerChaos
 			|QueenHead
 			|HeadHandler
-			|AvoidanceHPBar
-			+Attack
+			|AvoidanceHPBarCh
+			+Attacks
 				|YellowAttack
 				|YellowBuff
 				|RedAttack
@@ -596,7 +596,13 @@
 		|GoldenSpikeD
 		|CutsceneHandler
 		+Boss
+			|BossSaveO
 			|BossO
+			|AvoidanceHPBarO
+			|EyeFollow
+			|TrailBullet
+			+Attacks
+				|Attack1
 	+Credits
 		|CreditsWarp
 		|BranchWarp

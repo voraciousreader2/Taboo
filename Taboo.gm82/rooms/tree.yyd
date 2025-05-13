@@ -38,7 +38,6 @@
 	+Chaos
 		|rChaos0
 		|rChaosBoss
-		|rChaosBossTest
 		|rChaos1
 		|rChaos2
 		|rChaos3
@@ -74,4 +73,5 @@
 		|rOrder2
 		|rOrder3
 		|rOrderFinale
+		|rOrderBoss
 		|rOrderBossTest

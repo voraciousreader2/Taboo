@@ -560,6 +560,8 @@
 		|sprTrollSJ
 	+Order
 		|sprEye
+		|sprEyeHole
+		|sprEyeZoom
 		|sprEyeRainbow
 		|sprEyeRed
 +Jopagu

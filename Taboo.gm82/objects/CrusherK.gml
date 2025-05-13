@@ -16,13 +16,13 @@ if(!Player.dead)
 // vertical check
 if(Player.bbox_right>=x-16*image_xscale && Player.bbox_left <= x+16*image_xscale && active && speed==0)
 {
-col_y=collision_line(x,y,x,Player.y,Block,true,true)
+col_y=collision_line(x,y,x,Player.y,Block,true,true) || collision_line(x,y,x,Player.y,CoinBlock,true,true)
 if(!col_y){vspeed=3.75*sign(Player.y-y);}
 }
 //horizontal check
 if(Player.bbox_top<=y+16*image_xscale && Player.bbox_bottom >= y-16*image_xscale && active && speed==0)
 {
-col_x=collision_line(x,y,Player.x,y,Block,true,true)
+col_x=collision_line(x,y,Player.x,y,Block,true,true) || collision_line(x,y,Player.x,y,CoinBlock,true,true)
 if(!col_x){ hspeed=3.75*sign(Player.x-x);}
 }
 
@@ -30,7 +30,7 @@ if(!col_x){ hspeed=3.75*sign(Player.x-x);}
 }
 
 
-if(place_meeting(x,y,Block)) // hit a wall
+if(place_meeting(x,y,Block) || place_meeting(x,y,CoinBlock)) // hit a wall
 {
 sound_play("sndThud")
 move_outside_solid(180+direction,-1)
