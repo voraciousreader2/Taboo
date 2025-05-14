@@ -208,7 +208,7 @@ draw_reset();
 if(instance_exists(BossIntroduction) && !skip_intro)
 {
 draw_set2(1,1)
-draw_set_font(fntBoss)
-draw_text_transformed(400,512,"Press "+key_skip(vi_keyname)+" to Skip",1.5,1.5,0)
+draw_set_font(fntBossBig)
+draw_text_transformed(400,512,"Press "+key_skip(vi_keyname)+" to Skip",1,1,0)
 draw_reset()
 }

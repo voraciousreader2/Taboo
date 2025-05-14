@@ -238,7 +238,7 @@ draw_sprite_ext(sprite_index,-1,x+sprite_width*(1-xscale)/2,y,xscale,1,0,c_red,a
 
 if(instance_exists(BossIntroduction) && !skip_intro)
 {
-draw_set_font(fntBoss)
-draw_text_transformed(288,480,"Press "+key_skip(vi_keyname)+" to Skip",1.5,1.5,0)
+draw_set_font(fntBossBig)
+draw_text_transformed(288,480,"Press "+key_skip(vi_keyname)+" to Skip",1,1,0)
 draw_reset()
 }

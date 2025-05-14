@@ -600,9 +600,18 @@
 			|BossO
 			|AvoidanceHPBarO
 			|EyeFollow
-			|TrailBullet
 			+Attacks
 				|Attack1
+				|Attack2
+				|Attack3
+				|Attack4
+				|DevilStar
+				|TrailBullet
+				|BlackStar
+				|StarCannonB
+				|StarCannonR
+				|BulletTear
+				|CloudCannon
 	+Credits
 		|CreditsWarp
 		|BranchWarp

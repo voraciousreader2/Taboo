@@ -65,8 +65,8 @@ applies_to=self
 */
 if(text)
 {
-draw_set_font(fntBoss)
+draw_set_font(fntBossBig)
 draw_set_halign(fa_center)
-draw_text_transformed(400,128,str,1.5,1.5,0)
+draw_text_transformed(400,80,str,1,1,0)
 draw_reset()
 }

@@ -1,4 +1,4 @@
 //gm82 fields begin
-type="grass"
-tileset=tileHub
+type="clone"
+tileset=tileOrderB
 //gm82 fields end

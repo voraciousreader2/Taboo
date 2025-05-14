@@ -4,10 +4,10 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-phase_counter=0; avoidance=false;
+phase_counter=0; sprite_counter=0;
 start=false; active=false; defeated=false;
 skip_intro=false;
-snd_check=sound_isplaying("bgmBossO")
+sound_stop_all()
 HP=4500; maxHP=HP; counter=0;
 alpha=1;
 #define Alarm_0
@@ -17,6 +17,7 @@ action_id=603
 applies_to=self
 */
 active=true;
+phase_counter=1;
 av=instance_create(200,64,AvoidanceHPBarO)
 av.active=true;
 /*"/*'/**//* YYD ACTION
@@ -33,21 +34,21 @@ applies_to=self
 */
 if(start) // intro
 {
-alarm[0]=500;
+alarm[0]=300;
 start=false;
 
 
-active=true; start=false;
+
 if(!instance_exists(BossIntroduction))
 {intro=instance_create(x+64,y-16,BossIntroduction)
 intro.font=fntBoss; intro.alarm[0]=150*dt;
 intro.str="Oculus Miraculus"; intro.str2="Eternal Watcher";}
 
-phase_counter=1;
+
 
 }
 
-if(key_skip(vi_pressed)){skip_intro=true;}
+if(key_skip(vi_pressed) && instance_exists(BossIntroduction)){skip_intro=true;}
 if(skip_intro)
 {
 skip_intro=false;
@@ -60,7 +61,17 @@ HP-=1;
 
 switch (phase_counter)
 {
-    case 1: instance_create(x,y,Attack1); phase_counter=0; break;
+    case 1: instance_create(x,y,Attack1); sprite_counter=phase_counter;
+    phase_counter=0; break;
+
+    case 2: instance_create(x,y,Attack2); sprite_counter=phase_counter;
+    phase_counter=0; break;
+
+    case 3: instance_create(x,y,Attack3); sprite_counter=phase_counter;
+    phase_counter=0; break;
+
+    case 4: instance_create(x,y,Attack4); sprite_counter=phase_counter;
+    phase_counter=0; break;
 
 }
 
@@ -86,6 +97,17 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+switch (sprite_counter)
+{
+    case 0: sprite_index=sprEye; break;
+    case 1: sprite_index=sprEyeRed; break;
+    case 2: sprite_index=sprEyeStar; break;
+    case 3: sprite_index=sprEye; break;
+    case 4: sprite_index=sprEyePurple; break;
+
+}
+
+
 switch (counter mod 60) {
     case  0: {y-=1}break
     case 10: {y-=2}break
@@ -99,9 +121,16 @@ counter=(counter+1) mod 600
 
 if (counter>300 && counter<350 && counter mod 4 <2 && !defeated) {
     d3d_set_fog(1,$ffffff,0,0)
-    draw_self()
+    draw_sprite(sprite_index,-1,x,y)
     d3d_set_fog(0,0,0,0)
-}else{draw_self()}
+}else{draw_sprite(sprite_index,-1,x,y)}
+
+if(instance_exists(BossIntroduction) && !skip_intro && !defeated)
+{
+draw_set_halign(fa_center); draw_set_font(fntBossBig);
+draw_text_transformed(400,400,"Press "+key_skip(vi_keyname)+" to Skip",1,1,0)
+draw_reset()
+}
 
 if(defeated)
 {

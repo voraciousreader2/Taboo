@@ -493,10 +493,11 @@
 		|sprVineR
 		|sprSpring
 		|sprMiniCageMask
+		|sprMiniCage
+		|sprPlatformP
 	|sprArrowUp
 	|sprArrowDown
 	|sprPortal
-	|sprMiniCage
 	+spikesP
 		|spikeUP
 		|spikeRP
@@ -511,12 +512,9 @@
 	|sprOrbBlue
 	|sprOrbGray
 	|sprBossSave
-	|sprSafe
 	|sprWarning
 	|sprWarningSquare
-	|sprPlatformP
 	|sprTree
-	|sprSafeZone
 	+Credits
 		|sprVoracious
 		|sprVoraciousInv
@@ -558,12 +556,18 @@
 		|sprNaive
 		|sprChaosBlock
 		|sprTrollSJ
+		|sprSafeZone
+		|sprSafe
 	+Order
+		|sprDevilStar
 		|sprEye
+		|sprEyeStar
 		|sprEyeHole
 		|sprEyeZoom
 		|sprEyeRainbow
 		|sprEyeRed
+		|sprEyePurple
+		|sprBlackStar
 +Jopagu
 	|sprCage
 	|sprCageMask
