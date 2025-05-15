@@ -95,7 +95,7 @@ alarm[2]=50
 instance_create(368,308,WarningT)
 }
 
-if(phase_counter==2 && !instance_exists(AvoidanceHPBar))
+if(phase_counter==2 && !instance_exists(AvoidanceHPBarCh))
 {
 with(GrayAttack){instance_destroy();}
 image_alpha=1;

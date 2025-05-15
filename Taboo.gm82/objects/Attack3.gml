@@ -37,7 +37,7 @@ w2.direction=180
 lib_id=1
 action_id=605
 invert=0
-arg0=destroy
+arg0=warning
 */
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -45,7 +45,28 @@ action_id=603
 applies_to=self
 */
 with(CloudCannon){instance_destroy();}
+instance_create(576,512,WarningT)
+instance_create(160,512,WarningT)
+instance_create(224,480,WarningT)
+instance_create(512,480,WarningT)
+alarm[3]=50
+#define Alarm_3
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=605
+invert=0
+arg0=destroy
+*/
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
 with(BossO){phase_counter=4;}
+with(WarningT){instance_destroy();}
+with(OrderBlock){instance_destroy();}
+with(BreakBlock){instance_destroy();}
+sound_play("sndBlockChange")
 instance_destroy();
 #define Draw_0
 /*"/*'/**//* YYD ACTION

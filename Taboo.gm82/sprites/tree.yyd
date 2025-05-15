@@ -568,6 +568,8 @@
 		|sprEyeRed
 		|sprEyePurple
 		|sprBlackStar
+		|sprCloudCenter
+		|sprOrderBlock
 +Jopagu
 	|sprCage
 	|sprCageMask

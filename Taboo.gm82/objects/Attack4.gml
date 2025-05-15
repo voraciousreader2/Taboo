@@ -48,6 +48,8 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+with(CrusherK){instance_destroy();}
+
 with(BossO){phase_counter=5;}
 instance_destroy();
 #define Alarm_3
