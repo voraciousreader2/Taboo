@@ -10,14 +10,14 @@ length=480; //length of interval
 cycle=160; //frames per cycle
 x0=x; y0=y;
 
-alarm[0]=7;
+alarm[0]=50;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=7;
+alarm[0]=9;
 w=instance_create(x,y,BulletTear);
 
 k= 3*x/16+150;

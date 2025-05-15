@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-image_xscale=4; image_yscale=4; alarm[0]=50
+image_xscale=4; image_yscale=4; alarm[0]=100
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

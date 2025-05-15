@@ -5,7 +5,7 @@ action_id=603
 applies_to=self
 */
 text=true; alarm[0]=100; str="Stella Diabolica"; alpha=1;
-alarm[1]=50; alarm[2]=800;
+alarm[1]=100; alarm[2]=850;
 
 if(!Player.dead)
 {
@@ -74,6 +74,7 @@ if(text)
 {
 draw_set_font(fntBossBig)
 draw_set_halign(fa_center)
+draw_set_color(c_red)
 draw_text_transformed(400,80,str,1,1,0)
 draw_reset()
 }

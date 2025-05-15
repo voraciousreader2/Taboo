@@ -62,7 +62,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[3]=30;
+alarm[3]=40;
 
 offset=random(72);
 for(i=1; i<=5; i+=1)
@@ -84,6 +84,7 @@ if(text)
 {
 draw_set_font(fntBossBig)
 draw_set_halign(fa_center)
+draw_set_color(c_purple)
 draw_text_transformed(400,80,str,1,1,0)
 draw_reset()
 }

@@ -32,8 +32,8 @@ applies_to=self
 */
 if(!Player.dead)
 {
-alarm[1]=12;
-ang=random(180); radius=random_range(200,250);
+alarm[1]=15;
+ang=random(180); radius=random_range(240,280);
 
 bullet_x=Player.x+lengthdir_x(radius,ang);
 bullet_y=Player.y+lengthdir_y(radius,ang);
@@ -67,6 +67,7 @@ if(text)
 {
 draw_set_font(fntBossBig)
 draw_set_halign(fa_center)
+draw_set_color(c_black)
 draw_text_transformed(400,80,str,1,1,0)
 draw_reset()
 }

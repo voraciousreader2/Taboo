@@ -55,7 +55,7 @@ skip_intro=false;
 alarm[0]=1;
 }
 
-if(active && !defeated)
+if(active && !defeated && !Player.dead)
 {
 HP-=1;
 
@@ -71,6 +71,9 @@ switch (phase_counter)
     phase_counter=0; break;
 
     case 4: instance_create(x,y,Attack4); sprite_counter=phase_counter;
+    phase_counter=0; break;
+
+    case 5: instance_create(x,y,Attack5); sprite_counter=phase_counter;
     phase_counter=0; break;
 
 }
@@ -104,6 +107,7 @@ switch (sprite_counter)
     case 2: sprite_index=sprEyeStar; break;
     case 3: sprite_index=sprEye; break;
     case 4: sprite_index=sprEyePurple; break;
+    case 5: sprite_index=sprEyeRainbow; break;
 
 }
 
