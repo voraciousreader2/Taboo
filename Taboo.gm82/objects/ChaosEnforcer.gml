@@ -41,13 +41,13 @@ if(place_meeting(x,y,SafeZone)){instance_destroy();}
 }
 repeat(2)
 {
-spike1=instance_create(place_x+random_range(-80,80),place_y+random_range(-80,80),SpikeU);
-spike1.image_angle=random(360);
+spike1=instance_create(place_x+random_range(-80,80),place_y+random_range(-80,80),EasingSpike);
+r=random(360); spike1.image_angle=r; spike1.direction=r;
 with(spike1){if(place_meeting(x,y,SafeZone)){instance_destroy()}}
 
-spike2=instance_create(place_x2+random_range(-80,80),place_y2+random_range(-80,80),SpikeU);
-spike2.image_angle=random(360);
-with(spike2){if(place_meeting(x,y,SafeZone)){instance_destroy()}}
+//spike2=instance_create(place_x2+random_range(-80,80),place_y2+random_range(-80,80),EasingSpike);
+//r=random(360); spike2.image_angle=r; spike2.direction=r;
+//with(spike2){if(place_meeting(x,y,SafeZone)){instance_destroy()}}
 
 
 }

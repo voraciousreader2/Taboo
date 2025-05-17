@@ -123,11 +123,15 @@ switch (counter mod 60) {
 
 counter=(counter+1) mod 600
 
-if (counter>300 && counter<350 && counter mod 4 <2 && !defeated) {
+if(!defeated)
+{
+if (counter>300 && counter<350 && counter mod 4 <2)
+{
     d3d_set_fog(1,$ffffff,0,0)
     draw_sprite(sprite_index,-1,x,y)
     d3d_set_fog(0,0,0,0)
 }else{draw_sprite(sprite_index,-1,x,y)}
+}
 
 if(instance_exists(BossIntroduction) && !skip_intro && !defeated)
 {
@@ -139,8 +143,13 @@ draw_reset()
 if(defeated)
 {
 draw_set_alpha(alpha)
- draw_self()
  alpha-=0.01;
+ draw_sprite_ext(sprEyeRainbow,-1,x,y,1,1,360*alpha,c_white,alpha)
  draw_reset();
- if(alpha<=0){instance_destroy()}
+ if(alpha<=0)
+ {
+ w=instance_create(368,352,Warp)
+ w.image_xscale=2; w.image_yscale=2; w.roomTo=rCreditsMakerO;
+ instance_destroy()
+ }
 }

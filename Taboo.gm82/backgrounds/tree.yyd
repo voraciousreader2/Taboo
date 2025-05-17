@@ -34,6 +34,7 @@
 	|bgPerlin
 |bgStars
 |bgTitle
+|bGoldenEye
 |bTempleJ
 |bTempleJ2
 |bTempleJ3
@@ -52,3 +53,7 @@
 |bOrder
 |tileChaos
 |tileOrderB
+|bStripes
+|bStripes2
+|bSpirals
+|bSquares

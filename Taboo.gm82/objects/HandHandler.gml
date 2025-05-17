@@ -12,8 +12,8 @@ att2=ds_bag_grab(bag_hands);
 att3=ds_bag_grab(bag_hands);
 att4=ds_bag_grab(bag_hands);
 
-instance_create(80,336,ShootLeft)
-instance_create(656,336,ShootRight)
+instance_create(80,352,ShootLeft)
+instance_create(656,352,ShootRight)
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

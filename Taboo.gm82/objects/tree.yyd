@@ -372,6 +372,7 @@
 		|Skinner
 		|SkinnerString
 		|TextDraw
+		|TextDrawColor
 		|Autotiler
 		|DropShadow
 		|SkyGradient
@@ -591,6 +592,7 @@
 				|SineBulletU
 				|GrayAttack
 				|BulletGray
+		|EasingSpike
 	+Order
 		|GoldenSpikeU
 		|GoldenSpikeD

@@ -12,7 +12,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=30;
+alarm[0]=25;
 
 side=-side;
 bullet_x=400-side*random_range(300,350);

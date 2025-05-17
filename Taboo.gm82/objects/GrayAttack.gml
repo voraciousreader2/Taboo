@@ -11,6 +11,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=25;
+alarm[0]=20;
 instance_create_moving(x,y,BulletGray,5,ang);
 ang=(ang+53) mod 360

@@ -88,6 +88,7 @@ instance_create(x,300,HandHandler)
 if(phase_counter==1 && !instance_exists(HeadHandler))
 {
 instance_create(x,500,HeadHandler);
+with(HPMode){hp=2;}
 image_alpha=0.5;
 instance_create(x,y,SpinnerChaos);
 with(SpinnerChaos){event_perform(ev_other,ev_room_start)}
@@ -99,7 +100,7 @@ if(phase_counter==2 && !instance_exists(AvoidanceHPBarCh))
 {
 with(GrayAttack){instance_destroy();}
 image_alpha=1;
-with(HPMode){hp+=1;}
+with(HPMode){hp=2;}
 
 bag_av=ds_bag_create();
 ds_bag_add(bag_av,BlueBuff, GreenBuff, YellowBuff, RedBuff)
