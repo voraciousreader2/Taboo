@@ -92,7 +92,7 @@ if(HP<=0 && !defeated)
 defeated=true;
 sound_stop_all();
 sound_play("sndBossDeath");
- alarm[1]=100;
+global.ending="order"
 }
 #define Draw_0
 /*"/*'/**//* YYD ACTION

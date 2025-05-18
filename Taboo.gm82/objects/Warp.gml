@@ -27,7 +27,7 @@ if (warpToPlayerstart) {
     sound_play_auto("sndBlockChange")
     instance_destroy()
 } else {
-    collect_items()
+    //collect_items()
     if (warpsound!="") {
         persistent=1
     }

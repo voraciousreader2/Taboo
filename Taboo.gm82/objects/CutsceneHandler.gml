@@ -42,8 +42,9 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if(global.itemcount==3)
+if(global.itemcount>=3)
 {
+global.itemcount=3;
 freeze_player();
 alarm[0]=300;
 alarm[1]=50;

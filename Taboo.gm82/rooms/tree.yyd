@@ -5,9 +5,11 @@
 +Game
 	|rmDifficulty
 	|rmTemplate
+	|rIntro1
+	|rIntro2
+	|rIntro3
+	|rIntro4
 	|rHub
-	|rGimmickTest
-	|rDeathTest
 	+TempleC
 		|rTempleC0
 		|rTempleC1

@@ -105,7 +105,7 @@ if(!sound_isplaying("bgmBossJ"))
 {sound_loop("bgmBossJ"); sound_set_loop_points("bgmBossJ",26,185)}
 
 //phase 1
-alarm[1]=750;
+alarm[1]=700;
 burst1=instance_create(128,192,Burst360); burst1.offset=76;
 burst2=instance_create(640,192,Burst360); burst2.offset=92;
 burst3=instance_create(224,96,Burst360); burst3.offset=108;
@@ -113,7 +113,7 @@ burst4=instance_create(544,96,Burst360); burst4.offset=124;
 
 if(skip_intro)
 {
-alarm[1]=700;
+alarm[1]=650;
 }
 
 for(i=0;i<=14; i+=1)
