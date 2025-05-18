@@ -16,10 +16,14 @@ applies_to=self
 */
 if(i<=11)
 {
-instance_create(160,32+32*i,FieldU);
-instance_create(608,32+32*i,FieldU);
+w1=instance_create(160,32+32*i,FieldU);
+w2=instance_create(608,32+32*i,FieldU);
 i+=1
-alarm[0]=10
+w1.image_index=(i mod 8 )
+w2.image_index=(i mod 8 )
+alarm[0]=8
+
+
 }
 else{alarm[1]=10}
 #define Alarm_1

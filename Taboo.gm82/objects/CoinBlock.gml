@@ -13,7 +13,10 @@ action_id=603
 applies_to=self
 */
 if(coin_counter>=max_coin)
-{sound_play("sndBlockChange"); instance_destroy()}
+{
+//sound_play("sndBlockChange");
+instance_destroy()
+}
 #define Other_4
 /*"/*'/**//* YYD ACTION
 lib_id=1
