@@ -9,15 +9,13 @@ offset=100;
 bullets=12;
 t=0;
 alpha=0;
-skip_intro=false;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-if(key_skip(vi_pressed)){offset-=50;}
-else if(offset>0){offset-=1;}
+if(offset>0){offset-=1;}
 if(offset<=0)
 {
 offset=0;

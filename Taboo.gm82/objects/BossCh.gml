@@ -22,6 +22,11 @@ action_id=603
 applies_to=self
 */
 vspeed=5;
+with(BossBullet){instance_destroy();}
+with(SineBulletD){instance_destroy();}
+with(SineBulletU){instance_destroy();}
+with(SnakingBullet){instance_destroy();}
+with(BulletBurstRed){instance_destroy();}
 global.ending="chaos";
 #define Alarm_1
 /*"/*'/**//* YYD ACTION

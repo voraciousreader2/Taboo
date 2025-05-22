@@ -123,7 +123,7 @@ phase_counter+=1;
 instance_destroy_id(current_phase);
 with(WrapCherry){instance_destroy();}
 with(RainbowCherry){instance_destroy();}
-with(CrossCherry){instance_destroy();}
+with(ProximityCherry){instance_destroy();}
 alarm[3]=50; iframes=true;
 }
 
@@ -133,7 +133,7 @@ phase_counter+=1;
 instance_destroy_id(current_phase);
 with(WrapCherry){instance_destroy();}
 with(RainbowCherry){instance_destroy();}
-with(CrossCherry){instance_destroy();}
+with(ProximityCherry){instance_destroy();}
 alarm[3]=50; iframes=true;
 }
 
@@ -144,7 +144,7 @@ sound_stop_all();
 
 with(WrapCherry){instance_destroy();}
 with(RainbowCherry){instance_destroy();}
-with(CrossCherry){instance_destroy();}
+with(ProximityCherry){instance_destroy();}
  alarm[1]=1;}
 #define Collision_Player
 /*"/*'/**//* YYD ACTION

@@ -1,4 +1,4 @@
-sprite=sprFieldL
+sprite=sprFieldL2
 visible=1
 solid=0
 persistent=0

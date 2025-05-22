@@ -450,10 +450,6 @@
 	|sprScroll
 	|sprArrowR
 	+Fields
-		|sprFieldR
-		|sprFieldU
-		|sprFieldD
-		|sprFieldL
 		|sprBlueCoin
 		|sprCoinBlock
 		|sprKBD
@@ -468,6 +464,15 @@
 		|sprLobelia
 		|sprYinYangCenter
 		|sprYinYangTopLeft
+		+orig
+			|sprFieldR
+			|sprFieldU
+			|sprFieldD
+			|sprFieldL
+		|sprFieldR2
+		|sprFieldD2
+		|sprFieldL2
+		|sprFieldU2
 	+Blocks
 		|sprFlipBlock
 		|sprPushBox

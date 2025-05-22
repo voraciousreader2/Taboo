@@ -14,7 +14,7 @@ applies_to=self
 if(!Player.dead)
 {
 // vertical check
-if(Player.bbox_right>=x-16*image_xscale && Player.bbox_left <= x+16*image_xscale && active && speed==0)
+if(Player.bbox_right>=x-1-16*image_xscale && Player.bbox_left <= x+16*image_xscale && active && speed==0)
 {
 col_y=collision_line(x,y,x,Player.y,Block,true,true) || collision_line(x,y,x,Player.y,CoinBlock,true,true)
 if(!col_y){vspeed=3.75*sign(Player.y-y);}

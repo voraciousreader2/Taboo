@@ -2,7 +2,7 @@ TABOO
 
 version 1.0
 by Voracious Reader
-Release Date: xx/xx/2025 
+Release Date: xx/06/2025 
 Created with Game Maker Studio 8.2 (renex² engine)
 
 "Trapped in a city that brings out the darkness in my heart..."
@@ -10,7 +10,7 @@ Created with Game Maker Studio 8.2 (renex² engine)
 -------------------------------------------------
 
 Level design, music selection: Voracious Reader
-Playtesters: ameliandyou, YaBoiMarcAntony
+Playtesters: ameliandyou, YaBoiMarcAntony, ava
 
 ------------------------------------------------------
 
@@ -21,14 +21,14 @@ voraciousreader (Twitch)
 
 Assets:
 
-Shutterstock (some backgrounds)
+Shutterstock, Pixabay (some backgrounds)
 Kayin, renex engine (IWBTG sprites and sound effects)
 Kickpixel (orb sprites)
 freesound.org (several sfx)
 Prince of Persia: Warrior Within (several sfx)
 pieceofcheese (spike sprites)
 The Legend of Zelda: Oracle of Seasons (castle tileset)
-Final Fantasy Brave Exvius, I Wanna Maker, Chrono Trigger (boss sprites)
+Final Fantasy, I Wanna Maker, Chrono Trigger (boss sprites)
 Phoenotopia Awakening (book sprites)
 
 I forgot where I got the warp sprite from
@@ -49,7 +49,7 @@ Grass Temple: Alleyways of Lanka by Kyle Misko (The Case of the Golden Idol OST)
 Boss: At war with Kaileena by Stuart Chatwood, Inon Zur (Prince of Persia - Warrior Within OST)
 Cutscene: Old One / Eel Scene by pantasz (World of Horror OST)
 Temple of Order: The Cathedral by Kevin Schilder (Heretic OST)
-Final Boss: Last Stand by insaneintherainmusic, Shady Cicada (Tyrion Cuthbert: Attorney of the Arcane OST)
+Final Avoidance: Last Stand by insaneintherainmusic, Shady Cicada (Tyrion Cuthbert: Attorney of the Arcane OST)
 Temple of Chaos: Sauna by Shoji Meguro (Persona 4 OST)
 Final Boss: Master of Shadow by Shoji Meguro (Persona 3 OST)
 Credits: ALMATERIA by Eri Kawai (Tales of Symphonia: Sylvarant Arc)
