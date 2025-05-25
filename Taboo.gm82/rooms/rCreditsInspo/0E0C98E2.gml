@@ -1,3 +1,3 @@
 //gm82 fields begin
-roomTo=rCreditsTesters
+roomTo=rCreditsInspo2
 //gm82 fields end

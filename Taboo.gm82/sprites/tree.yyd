@@ -527,10 +527,12 @@
 		|sprPOP
 		|sprAmeli
 		|sprYBMA
+		|sprAva
 		|sprDevilSurvivor
 		|sprJopagu
 		|sprP3P
 		|sprVorovo
+		|sprTLF
 	+Chaos
 		+Boss
 			|sprQueenSheet

@@ -39,7 +39,6 @@
 		|rTempleJBoss
 	+Chaos
 		|rChaos0
-		|rChaosBoss
 		|rChaos1
 		|rChaos2
 		|rChaos3
@@ -49,6 +48,16 @@
 		|rChaos7
 		|rChaos8
 		|rChaosFinal
+		|rChaosBoss
+	+Order
+		|rOrder0
+		|rOrder1
+		|rOrder2
+		|rOrder3
+		|rOrder4
+		|rOrderFinale
+		|rOrderBoss
+		|rOrderBossTest
 	+Credits
 		|rCreditsMakerO
 		|rCreditsMakerCh
@@ -69,12 +78,3 @@
 		|rCreditsBossCh
 		|rClearO
 		|rClearCh
-	+Order
-		|rOrder0
-		|rOrder1
-		|rOrder2
-		|rOrder3
-		|rOrder4
-		|rOrderFinale
-		|rOrderBoss
-		|rOrderBossTest

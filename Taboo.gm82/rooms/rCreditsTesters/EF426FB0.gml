@@ -1,4 +1,3 @@
 //gm82 fields begin
-duration=450
-roomTo=rIntro3
+spr=sprAva
 //gm82 fields end

@@ -541,6 +541,7 @@
 	+Rules
 		|AngryWater
 		|MiniCage
+		|FunnyText
 		|RuleEnforcer
 		|Spring
 		|Tree
@@ -555,7 +556,6 @@
 			|CrossCherry
 			|ProximityCherry
 			|Phase3P
-		|FunnyText
 	|SaveBook
 	|Scroll
 	+Chaos
@@ -623,6 +623,7 @@
 			|EyeShield
 	+Credits
 		|CreditsWarp
+		|IntroWarp
 		|BranchWarp
 		|CreditsPortrait
 |PlayerStart

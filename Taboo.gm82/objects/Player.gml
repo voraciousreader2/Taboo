@@ -20,7 +20,8 @@ maxVspeed=9
 
 
 //turn on bow when difficulty is 0
-bow=(difficulty==0)
+//bow=(difficulty==0)
+bow=true
 
 
 //variables for optional player momentum system

@@ -11,7 +11,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-active=true;
+active=true; speed=3;
 sprite_index=sprCherryWhite;
 #define Step_0
 /*"/*'/**//* YYD ACTION
@@ -26,7 +26,7 @@ if(point_distance(x,y,Player.x,Player.y)<=200)
 {
 active=false;
 direction=point_direction(x,y,Player.x,Player.y);
-speed=3.5; sprite_index=sprCherry;
+speed=4.5; sprite_index=sprCherry;
 alarm[0]=100;
 }
 

@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-num=12; radius=160;
+num=18; radius=160;
 bag_cherries=ds_bag_create();
 if(!Player.dead)
 {
@@ -33,11 +33,11 @@ applies_to=self
 
 if(!ds_bag_empty(bag_cherries) && !Player.dead)
 {
-alarm[0]=50;
+alarm[0]=30;
 w=ds_bag_grab(bag_cherries);
 w.circle=false;
-w.direction=point_direction(w.x,w.y,Player.x, Player.y);
-w.speed=3;
+w.direction=point_direction(w.x,w.y,Player.x, Player.y)+90;
+w.speed=4;
 }
 #define Step_0
 /*"/*'/**//* YYD ACTION

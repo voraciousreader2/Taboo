@@ -1,4 +1,3 @@
 //gm82 fields begin
-duration=450
-roomTo=rIntro4
+roomTo=rHub
 //gm82 fields end

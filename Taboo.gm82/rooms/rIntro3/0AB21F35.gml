@@ -1,4 +1,3 @@
 //gm82 fields begin
-spr=sprTLF
+roomTo=rIntro4
 //gm82 fields end
-sprite_index=sprP3P

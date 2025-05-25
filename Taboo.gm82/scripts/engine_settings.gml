@@ -148,9 +148,9 @@ global.release_mode=false
     //regardless of debug mode
     global.a_d_trick=false
     //make the Medium difficilty bow lag behind like in the original game
-    global.bow_lag=true
+    global.bow_lag=false
     //turns the kid's bow blue if the player can't double jump (only appears on Medium)
-    global.celeste_bow=false
+    global.celeste_bow=true
     //enable distance vines (classic engine vine check using distance_to_object)
     global.distance_vines=false
     //allow the player to grab vines while on the floor
