@@ -6,6 +6,7 @@ applies_to=self
 */
 text=true; alarm[0]=100; str="Lacrimae Caelestes"; alpha=1;
 alarm[1]=50; alarm[2]=800;
+x=BossO.x; y=BossO.y;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -13,6 +14,9 @@ action_id=603
 applies_to=self
 */
 text=false;
+alarm[0]=12;
+w=instance_create(x,y,BulletTear);
+w.direction=random_range(210,330)
 #define Alarm_1
 /*"/*'/**//* YYD ACTION
 lib_id=1

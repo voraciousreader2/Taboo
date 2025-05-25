@@ -17,7 +17,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=9;
+alarm[0]=12;
 w=instance_create(x,y,BulletTear);
 
 k= 3*x/16+150;

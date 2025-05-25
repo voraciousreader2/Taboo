@@ -32,13 +32,14 @@ applies_to=self
 */
 if(!Player.dead)
 {
-alarm[1]=15;
+alarm[1]=14;
 ang=random(180); radius=random_range(240,280);
 
 bullet_x=Player.x+lengthdir_x(radius,ang);
 bullet_y=Player.y+lengthdir_y(radius,ang);
 dir=ang+180;
 
+instance_create(bullet_x,bullet_y,EyeRedSmall)
 instance_create_moving(bullet_x,bullet_y,TrailBullet,random_range(4,6),dir+random_range(-30,30));
 
 }
@@ -56,6 +57,8 @@ applies_to=self
 */
 instance_destroy_id(EyeFollow);
 with(BossO){phase_counter=2;}
+with(TrailBullet)
+{direction=point_direction(x,y,Player.x,Player.y)+180}
 instance_destroy();
 #define Draw_0
 /*"/*'/**//* YYD ACTION

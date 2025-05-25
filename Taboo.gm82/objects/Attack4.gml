@@ -49,7 +49,7 @@ action_id=603
 applies_to=self
 */
 with(CrusherK){instance_destroy();}
-
+with(BossBullet){killer=false; image_alpha=0.25;}
 with(BossO){phase_counter=5;}
 instance_destroy();
 #define Alarm_3
