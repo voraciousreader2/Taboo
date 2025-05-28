@@ -59,7 +59,9 @@
 		|rOrderBoss
 		|rOrderBossTest
 	+Credits
+		|rCreditsLoreO
 		|rCreditsMakerO
+		|rCreditsLoreCh
 		|rCreditsMakerCh
 		|rCreditsEngine
 		|rCreditsInspo

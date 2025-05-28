@@ -149,7 +149,7 @@ draw_set_alpha(alpha)
  if(alpha<=0)
  {
  w=instance_create(368,352,Warp)
- w.image_xscale=2; w.image_yscale=2; w.roomTo=rCreditsMakerO;
+ w.image_xscale=2; w.image_yscale=2; w.roomTo=rCreditsLoreO;
  instance_destroy()
  }
 }
