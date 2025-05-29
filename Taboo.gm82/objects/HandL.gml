@@ -5,7 +5,7 @@ action_id=603
 applies_to=self
 */
 image_speed=0; image_index=0;
-maxHP=8; HP=maxHP;
+maxHP=6; HP=maxHP;
 iframes=true; defeated=false;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION

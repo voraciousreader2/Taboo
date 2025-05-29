@@ -27,6 +27,8 @@ with(SineBulletD){instance_destroy();}
 with(SineBulletU){instance_destroy();}
 with(SnakingBullet){instance_destroy();}
 with(BulletBurstRed){instance_destroy();}
+with(GrayAttack){instance_destroy();}
+with(BulletGray){direction=point_direction(x,y,Player.x,Player.y)+180}
 global.ending="chaos";
 #define Alarm_1
 /*"/*'/**//* YYD ACTION
@@ -44,6 +46,11 @@ avoidance=true;
 instance_create(x,y,att1);
 av.col=att1.col;
 av.active=true;
+
+g1=instance_create(150,200,GrayAttack);
+g1.ang=0;
+g2=instance_create(650,200,GrayAttack);
+g2.ang=180;
 #define Alarm_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -58,11 +65,6 @@ applies_to=self
 */
 instance_create(384,308,GoldenDiamond)
 instance_destroy_id(WarningT)
-
-g1=instance_create(150,200,GrayAttack);
-g1.ang=0;
-g2=instance_create(650,200,GrayAttack);
-g2.ang=180;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -103,7 +105,7 @@ instance_create(368,308,WarningT)
 
 if(phase_counter==2 && !instance_exists(AvoidanceHPBarCh))
 {
-with(GrayAttack){instance_destroy();}
+//with(GrayAttack){instance_destroy();}
 image_alpha=1;
 with(HPMode){hp=2;}
 

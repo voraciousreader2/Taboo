@@ -5,6 +5,11 @@ action_id=603
 applies_to=self
 */
 unfreeze_player();
+if(!Player.dead)
+{
+instance_create(Player.x,Player.y,Trigger3)
+}
+instance_destroy()
 #define Alarm_1
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -46,7 +51,7 @@ if(global.itemcount>=3)
 {
 global.itemcount=3;
 freeze_player();
-alarm[0]=300;
+alarm[0]=250;
 alarm[1]=50;
 sound_play("bgmCutscene")
 }

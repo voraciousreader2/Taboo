@@ -35,7 +35,7 @@ with(HandR){image_index=1; iframes=false;}
 if(instance_exists(HandL))
 {
 
-if(HandL.HP==4 && instance_exists(att1))
+if(HandL.HP==3 && instance_exists(att1))
 {
 instance_destroy_id(att1)
 instance_create(x,y,att3);
@@ -52,7 +52,7 @@ hand_counter+=1
 
 if(instance_exists(HandR))
 {
-if(HandR.HP==4 && instance_exists(att2))
+if(HandR.HP==3 && instance_exists(att2))
 {
 instance_destroy_id(att2)
 instance_create(x,y,att4);

@@ -5,13 +5,14 @@ action_id=603
 applies_to=self
 */
 alarm[0]=50
+cycle=80
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0]=80;
+alarm[0]=cycle;
 dir=random_range(30,150);
 radius=300; spd=4+random_range(-0.5,0.5);
 spin=choose(-1,1)*random_range(2.4,3)

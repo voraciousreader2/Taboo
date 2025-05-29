@@ -24,6 +24,9 @@ draw_set_font(fntSignpost)
 draw_set2(1,1)
 if(!Player.dead && counter>=0)
 {
+
+if(counter<100){draw_set_color(c_red)}
+
 if(Player.vflip==1)
 {draw_text(Player.x+2, Player.y-24,string(counter))}
 else if(Player.vflip==-1)

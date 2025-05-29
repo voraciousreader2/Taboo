@@ -4,7 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-x=BossP.x; y=BossP.y; num=12
+x=BossP.x; y=BossP.y; num=13
 
 //for(i=0; i<=1; i+=1)
 //{

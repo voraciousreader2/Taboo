@@ -66,9 +66,10 @@ applies_to=self
 */
 //instance_destroy_id(StarCannonB);
 instance_destroy_id(StarCannonR);
-w=instance_create_moving(400, 304, StarDoubleJump,5,90)
+
 w.image_xscale=5; w.image_yscale=5;
 Player.maxjumps=2; sound_play("sndGainStar")
+with(DevilStar){killer=false; image_alpha=0.5}
 with(BossO){phase_counter=3;}
 instance_destroy();
 #define Draw_0

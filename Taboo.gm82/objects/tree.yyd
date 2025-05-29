@@ -581,9 +581,11 @@
 			|AvoidanceHPBarCh
 			+Attacks
 				|YellowAttack
+				|YellowNerf
 				|YellowBuff
 				|RedAttack
 				|RedBuff
+				|RedNerf
 				|GreenAttack
 				|GreenBuff
 				|BlueAttack
@@ -598,7 +600,6 @@
 	+Order
 		|GoldenSpikeU
 		|GoldenSpikeD
-		|CutsceneHandler
 		+Boss
 			|BossSaveO
 			|BossO
@@ -626,6 +627,8 @@
 		|IntroWarp
 		|BranchWarp
 		|CreditsPortrait
+	|CutsceneHandler
+	|DialogueHandler
 |PlayerStart
 |Block
 |Platform

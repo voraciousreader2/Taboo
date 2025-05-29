@@ -4,32 +4,8 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-HP=4; iframes=false; defeated=false;
+HP=2; iframes=false; defeated=false;
 att=noone;
-#define Alarm_0
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-iframes=false; image_blend=c_white;
-
-switch (att)
-{
-    case "red":
-    with(RedAttack){instance_destroy()}; break;
-
-    case "yellow":
-    with(YellowAttack){instance_destroy()}; break;
-
-    case "green":
-    with(GreenAttack){instance_destroy()}; break;
-
-    case "blue":
-    with(BlueAttack){instance_destroy()}; break;
-
-
-}
 #define Collision_Bullet
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -42,22 +18,27 @@ with(other){instance_destroy();}
 if(HP>0 && !iframes && !defeated)
 {
 HP-=1;
-iframes=true; alarm[0]=200; image_blend=c_red;
+with(HeadHandler){head_counter+=1}
+iframes=true;  image_blend=c_red;
 if(HP>0){sound_play("sndHit")}
+//alarm[0]=200;
 
 switch (att)
 {
     case "red":
-        instance_create(x,y,RedAttack); break;
+        att1=instance_create(x,y,RedNerf);
+        att1.cycle=120; break;
 
     case "yellow":
-        instance_create(x,y,YellowAttack); break;
-
+        att2=instance_create(x,y,YellowNerf); break;
+        att2.cycle=120; break;
     case "green":
-        instance_create(x,y,GreenAttack);break;
+        att3=instance_create(x,y,GreenAttack);
+        att3.cycle=60; break;
 
     case "blue":
-        instance_create(x,y,BlueAttack);break;
+       att4=instance_create(x,y,BlueAttack);
+       att4.cycle=50; break;
 
 
 }
@@ -66,8 +47,27 @@ switch (att)
 
 if(HP<=0 && !defeated)
 {
+
 defeated=true; visible=false;
-with(HeadHandler){head_counter+=1}
+
+switch (att)
+{
+    case "red":
+    with(RedNerf){instance_destroy()}; break;
+
+    case "yellow":
+    with(YellowNerf){instance_destroy()}; break;
+
+    case "green":
+    with(GreenAttack){instance_destroy()}; break;
+
+    case "blue":
+    with(BlueAttack){instance_destroy()}; break;
+
+
+}
+
+with(HeadHandler){death_counter+=1}
 instance_create(x-40,y-48,Explosion)
 alarm[0]=1
 }

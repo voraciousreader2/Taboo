@@ -6,7 +6,7 @@ applies_to=self
 */
 max_num=4
 num=4
-cycle_length=4
+cycle_length=6.4
 flower_length=4
 motion_type="circle"
 radius=80

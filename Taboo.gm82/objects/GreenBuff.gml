@@ -6,6 +6,13 @@ applies_to=self
 */
 alarm[0]=50;
 side=choose(1,-1); col=c_green;
+#define Destroy_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with(SnakingBullet){instance_destroy();}
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
