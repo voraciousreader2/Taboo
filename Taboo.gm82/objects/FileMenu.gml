@@ -200,7 +200,12 @@ for (i=0;i<3;i+=1) {
             if (savedata("room")==global.difficulty_room) {
                 draw_background(bgThumbDefault,x+i*240,y)
             } else if (savedata("clear")) {
-                draw_background(bgThumbClear,x+i*240,y)
+
+            if(savedata("ending")=="order")
+            {draw_background(thumbClearO,x+i*240,y)}
+            if(savedata("ending")=="chaos")
+            {draw_background(thumbClearCh,x+i*240,y)}
+
             } else {
                 if (thumb[i]!=noone) {
                     texture_set_interpolation(1)

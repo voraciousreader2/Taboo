@@ -25,10 +25,12 @@ global.player_weapon=global.player_default_weapon
 savedatap("skin",global.player_skin)
 savedatap("weapon",global.player_weapon)
 global.dialogueFlags = ds_map_create()
-		global.savedDialogueFlags = ds_map_create()
+global.savedDialogueFlags = ds_map_create()
 savedatap("slomo",1)
 savedatap("slomoto",1)
 savedatap("slomof",0)
+
+savedatap("ending", "order")
 
 ds_map_clear(global.persistmap)
 

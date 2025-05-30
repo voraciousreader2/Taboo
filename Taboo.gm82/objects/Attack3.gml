@@ -6,7 +6,7 @@ applies_to=self
 */
 text=true; alarm[0]=100; str="Lacrimae Caelestes"; alpha=1;
 alarm[1]=50; alarm[2]=800;
-instance_create(384,416,Warning)
+instance_create(368,416,Warning)
 x=BossO.x; y=BossO.y;
 i=0
 #define Alarm_0

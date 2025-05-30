@@ -19,6 +19,8 @@
 	|bgThumbDefault
 	|bgThumbClear
 	|bgThumbBroken
+	|thumbClearO
+	|thumbClearCh
 +autotiler
 	|bgMarkMazes32
 	|bgMarkMazes16

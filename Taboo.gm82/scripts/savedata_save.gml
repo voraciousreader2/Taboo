@@ -59,9 +59,11 @@ with (Player) if (!dead || argument0) {
     savedata("slomoto",global.slomoto)
     savedata("slomof",global.slomof)
 
+    savedata("ending", global.ending)
+
     custom_save()
 sm = ds_map_write(global.savedDialogueFlags)
-    		savedata("dialogueFlags", sm)
+    savedata("dialogueFlags", sm)
     with (all) event_perform(ev_trigger,tr_onsave)
 
     save_persistent_objects()

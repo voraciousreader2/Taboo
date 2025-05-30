@@ -163,6 +163,6 @@ action_id=603
 applies_to=self
 */
 w=instance_create(368,304,Warp);
-w.image_xscale=2; w.image_yscale=2; w.roomTo=rCreditsMakerCh;
+w.image_xscale=2; w.image_yscale=2; w.roomTo=rCreditsLoreCh;
 
 instance_destroy();

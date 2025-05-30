@@ -32,8 +32,8 @@ if (global.difficulty_room!=noone && room==rmMenu) {
         ds_map_read(global.persistmap,savedata("persistent hashmap"))
     //Jopagu
     ds_map_read(global.savedDialogueFlags , savedata("dialogueFlags"))
-    		ds_map_clear(global.dialogueFlags)
-    		merge_maps(global.dialogueFlags, global.savedDialogueFlags)
+    ds_map_clear(global.dialogueFlags)
+    merge_maps(global.dialogueFlags, global.savedDialogueFlags)
 
         global.onload_trigger=true
     }
@@ -41,6 +41,8 @@ if (global.difficulty_room!=noone && room==rmMenu) {
     global.slomo=savedata("slomo")
     global.slomoto=savedata("slomoto")
     global.slomof=savedata("slomof")
+
+    global.ending=savedata("ending")
 
     custom_load()
     global.itemcount=savedata("itemcount")
