@@ -46,6 +46,7 @@
 		|AntiSoftlockBlock
 		|AutoSaver
 		|GameClear
+		|GameUnclear
 		|BulletBlock
 	+Cherries
 		|Cherry
