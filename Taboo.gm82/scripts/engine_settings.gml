@@ -11,7 +11,7 @@
 */
 
 //Set this to true when making a final build of your game
-global.release_mode=false
+global.release_mode=true
 
 //game properties
     global.game_title="TABOO"
@@ -27,7 +27,7 @@ global.release_mode=false
     global.hub_room=noone //rmHub
     //password for encrypting saves
     //if you don't want a password, use "" for the save files to be unencrypted dsmaps
-    global.encrypt_save_password="squenex"
+    global.encrypt_save_password="megaten"
     //save game to appdata instead of a /save folder
     global.use_appdata=false
     //data folder location (make sure to include the data folder with your exe!)
@@ -39,7 +39,7 @@ global.release_mode=false
     global.filemenu_color=$ffffff
     //enable test mode in exe builds
     //do not forget to disable this when publishing your game
-    global.always_test_mode=true
+    global.always_test_mode=false
     //disable the player delta time system (see Player step event action 1)
     global.disable_delta_time=false
     //disable the global settings repository

@@ -21,6 +21,7 @@
 	|bgThumbBroken
 	|thumbClearO
 	|thumbClearCh
+	|thumbHub
 +autotiler
 	|bgMarkMazes32
 	|bgMarkMazes16

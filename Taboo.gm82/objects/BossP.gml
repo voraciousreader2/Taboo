@@ -48,10 +48,10 @@ if(active)
 sound_play("sndMegaDelfruit")
 ds_bag_clear(bag_phase);
 ds_bag_destroy(bag_phase);
-w=instance_create(368,272,FadeWarp);
+w=instance_create(368,272,Warp);
 w.image_xscale=2; w.image_yscale=2;
 w.roomTo=rHub;
-w.faderate=0.02; w.unfaderate=0.02;
+//w.faderate=0.02; w.unfaderate=0.02;
 active=false;}
 //instance_destroy()
 #define Alarm_2

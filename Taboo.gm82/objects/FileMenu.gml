@@ -197,6 +197,8 @@ for (i=0;i<3;i+=1) {
         } else if (global.num_difficulties>1) draw_text(x+i*240+64,y+48+96,global.name_difficulties[difficulty])
 
         if (global.savefile_thumbnails) {
+            if(room==rHub)
+            {draw_background(thumbHub,x+i*240,y)}
             if (savedata("room")==global.difficulty_room) {
                 draw_background(bgThumbDefault,x+i*240,y)
             } else if (savedata("clear")) {
@@ -207,7 +209,7 @@ for (i=0;i<3;i+=1) {
             {draw_background(thumbClearCh,x+i*240,y)}
 
             } else {
-                if (thumb[i]!=noone) {
+                if (thumb[i]!=noone && room!=rHub) {
                     texture_set_interpolation(1)
                     draw_background_stretched(thumb[i],x+i*240,y,128,96)
                     texture_set_interpolation(0)
