@@ -9,8 +9,13 @@ alarm[1]=100; alarm[2]=850;
 side=choose(true,false)
 
 if(!Player.dead)
+{
 instance_create(Player.x,Player.y,EyeShield)
+w1=instance_create(128,384,SideEye);
+w2=instance_create(672,384,SideEye)
+w1.spin=-1;
 sound_play("sndShield")
+}
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -68,6 +73,7 @@ action_id=603
 applies_to=self
 */
 with(BossO){phase_counter=0;}
+with(SideEye){defeated=true;}
 instance_destroy();
 #define Draw_0
 /*"/*'/**//* YYD ACTION

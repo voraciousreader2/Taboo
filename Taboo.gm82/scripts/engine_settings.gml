@@ -11,7 +11,7 @@
 */
 
 //Set this to true when making a final build of your game
-global.release_mode=true
+global.release_mode=false
 
 //game properties
     global.game_title="TABOO"
@@ -50,10 +50,10 @@ global.release_mode=true
 
 //difficulties
     //difficulty options:
-    add_difficulty("Medium",false,false)
+    //add_difficulty("Medium",false,false)
     add_difficulty("Hard",true,false)
-    add_difficulty("Very Hard",false,false)
-    add_difficulty("Impossible",false,true)
+   // add_difficulty("Very Hard",false,false)
+   // add_difficulty("Impossible",false,true)
 
     //you can replace these with bow/no bow for example, or even add more
     //there is a globalvar called "difficulty" that's automatically set for you

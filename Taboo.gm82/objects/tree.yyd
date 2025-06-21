@@ -606,6 +606,7 @@
 			|BossO
 			|AvoidanceHPBarO
 			|EyeFollow
+			|SideEye
 			+Attacks
 				|Attack1
 				|Attack2

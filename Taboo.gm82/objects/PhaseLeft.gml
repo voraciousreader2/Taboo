@@ -5,8 +5,10 @@ action_id=603
 applies_to=self
 */
 
-t=50;
-alarm[0]=t
+t=75;
+//alarm[0]=t
+alarm[1]=2*t
+alarm[2]=10
 i=0;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
@@ -27,7 +29,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-w=instance_create(550,150,Spinner)
+w=instance_create(550,128,Spinner)
 with(w)
 {
 object=Burst360; sprite=sprOrbBlue; radius=80;
@@ -42,6 +44,16 @@ o[i].offset=22*(i+1);
 //bullets=6; offset=50;
 //}
 }
+#define Alarm_2
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+alarm[2]=32;
+//instance_create_moving(768,384,FieldL,4,180)
+i=choose(0,1,2,3,4)
+instance_create_moving(768,384-32*i,FieldL,4,180)
 #define Draw_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
