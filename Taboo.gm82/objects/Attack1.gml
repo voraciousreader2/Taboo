@@ -7,6 +7,8 @@ applies_to=self
 text=true; alarm[0]=100; str="Camera Obscura"; alpha=1;
 alarm[1]=50; alarm[2]=800;
 
+spin=1;
+
 if(!Player.dead)
 {
 instance_create(Player.x,Player.y,EyeFollow)
@@ -33,7 +35,9 @@ applies_to=self
 if(!Player.dead)
 {
 alarm[1]=14;
-ang=random(180); radius=random_range(240,280);
+spin=-spin;
+
+ang=random_range(45+45*spin, 135+45*spin); radius=random_range(240,280);
 
 bullet_x=Player.x+lengthdir_x(radius,ang);
 bullet_y=Player.y+lengthdir_y(radius,ang);

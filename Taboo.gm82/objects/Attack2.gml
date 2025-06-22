@@ -40,7 +40,8 @@ if(!Player.dead)
 {
 alarm[1]=33;
 
-angle=random(72);
+//angle=random(72);
+angle=point_direction(x,y,Player.x,Player.y)
 
 for(i=0; i<=4; i+=1)
 {
